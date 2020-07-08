@@ -69,24 +69,108 @@
   border-style: ridge;
   color: #feffd4;
   font-weight: bold;
+  position: relative;
+}
+
+._help5050used_f131b:after {
+  content: "";
+  font-size: 50px;
+  position: absolute;
+  right: -3%;
+  top: 27%;
+  width: 100%;
+  transform: rotate(15deg);
+  transform-origin: 31% 34%;
+  border: 1px solid red;
+  color: red;
+}
+
+._help5050used_f131b:before {
+  content: "";
+  position: absolute;
+  right: -8%;
+  top: 57%;
+  width: 100%;
+  transform: rotate(-16deg);
+  transform-origin: 31% 34%;
+  border: 1px solid red;
+  color: red;
+}
+
+._helpcallused_f131b:after {
+  content: "";
+  font-size: 50px;
+  position: absolute;
+  right: -5%;
+  top: 27%;
+  width: 100%;
+  transform: rotate(27deg);
+  transform-origin: 31% 34%;
+  border: 1px solid red;
+  color: red;
+}
+
+._helpcallused_f131b:before {
+  content: "";
+  position: absolute;
+  right: -6%;
+  top: 57%;
+  width: 100%;
+  transform: rotate(-26deg);
+  transform-origin: 31% 34%;
+  border: 1px solid red;
+  color: red;
+}
+
+._helplookerused_f131b::after {
+  content: "";
+  font-size: 50px;
+  position: absolute;
+  right: -5%;
+  top: 27%;
+  width: 100%;
+  transform: rotate(27deg);
+  transform-origin: 31% 34%;
+  border: 1px solid red;
+  color: red;
+}
+
+._helplookerused_f131b:before {
+  content: "";
+  position: absolute;
+  right: -6%;
+  top: 57%;
+  width: 100%;
+  transform: rotate(-26deg);
+  transform-origin: 31% 34%;
+  border: 1px solid red;
+  color: red;
 }
 @charset "UTF-8";
 ._main_d16e4 {
   background-image: linear-gradient(to right bottom, #5a83ac, #000000d9);
-  height: 100vh;
   background-size: cover;
+  display: flex;
+  height: 100vh;
   position: relative;
   background-repeat: no-repeat;
 }
 
+._col8_d16e4 {
+  width: 70%;
+}
+
+._col4_d16e4 {
+  width: 30%;
+}
+
 ._game_d16e4 {
-  position: absolute;
-  width: 75%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 ._question_d16e4 {
@@ -128,13 +212,14 @@
   color: #b1b1b1;
 }
 
-._showscore_d16e4 {
-  position: absolute;
-  right: 0px;
-  top: 0px;
+._board_d16e4 {
   border: 1px solid wheat;
-  height: 100vh;
-  width: 25%;
+  height: 100%;
+}
+
+._boardbelow_d16e4 {
+  width: 100%;
+  text-align: center;
 }
 
 ._btn_d16e4 {
@@ -154,18 +239,10 @@
   font-family: cursive;
   font-style: italic;
   text-decoration: underline;
-  position: absolute;
-  top: 35%;
-  left: 20%;
-  transform: translate(-40%);
   font-size: 25px;
 }
 
 ._scorequestion_d16e4 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 100px;
   color: burlywood;
   font-family: fantasy;
@@ -173,10 +250,6 @@
 }
 
 ._btnstop_d16e4 {
-  position: absolute;
-  bottom: 30%;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: black;
   border: 0;
   padding: 10px 20px;
@@ -185,16 +258,12 @@
   border-radius: 5%;
   color: #feffd4;
   font-weight: bold;
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-top: 40px;
 }
 
 ._countdown_d16e4 {
-  position: absolute;
-  left: 50%;
   font-family: serif;
   font-style: italic;
-  transform: translateX(-50%);
   font-size: 70px;
   margin-top: 40px;
   color: red;
@@ -202,6 +271,21 @@
 
 ._modal_d16e4 {
   width: 50%;
+}
+
+._help_d16e4 {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+._helptext_d16e4 {
+  padding: 5px 0;
 }
 ._answer_6c073 {
   padding: 7px 0;
@@ -212,11 +296,15 @@
   align-items: center;
 }
 
+._item_6c073 {
+  color: #fff;
+}
+
 ._input_6c073 {
   display: none;
 }
 ._input_6c073:checked ~ ._item_6c073 {
-  background-color: greenyellow;
+  background-color: green;
 }
 ._container_1f489 {
   position: fixed;
@@ -320,6 +408,44 @@
           animation-name: _animatetop_8a959;
   -webkit-animation-duration: 0.4s;
           animation-duration: 0.4s;
+}
+._wrapper_78900 {
+  display: flex;
+  width: 200px;
+}
+
+._col_78900 {
+  width: 20%;
+}
+
+._item_78900 {
+  text-align: center;
+}
+
+._progress_78900 {
+  margin: auto;
+  background-color: gray;
+  width: 30px;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+
+._progessinner_78900 {
+  background-color: red;
+  width: 100%;
+  height: 0;
+  transition: all 1s ease;
+  font-size: 10px;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+._text_78900 {
+  margin-top: 5px;
+  color: #fff;
 }
 body {
   font-family: sans-serif;

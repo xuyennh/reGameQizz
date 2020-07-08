@@ -1,10 +1,10 @@
-import showHelp from '../Help/Help';
-function showBoard() {
-    return /*html*/`
+import Help from "../Help/Help";
+function Board() {
+  return /*html*/ `
         <div>
-            <div>${showHelp()}</div>
+            <div>${Help()}</div>
         </div>
-    `
+    `;
 }
 
-export default showBoard;
+export default Board;

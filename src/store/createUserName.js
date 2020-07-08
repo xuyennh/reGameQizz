@@ -1,7 +1,15 @@
 import { createState, logger } from "../utils";
 
 function createUserName() {
-  const { get, set, subscribe, update, shouldUpdate } = createState("");
+  const {
+    get,
+    set,
+    select,
+    selectAsync,
+    subscribe,
+    update,
+    shouldUpdate,
+  } = createState("");
   shouldUpdate((prevUserName, userName) => {
     if (!userName) {
       return false;
@@ -11,6 +19,8 @@ function createUserName() {
   return {
     get,
     set,
+    select,
+    selectAsync,
     subscribe,
     setUserName: (name) => update(() => name),
   };

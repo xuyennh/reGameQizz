@@ -7,10 +7,14 @@
   align-items: center;
 }
 
+.item {
+  color: #fff;
+}
+
 .input {
   display: none;
 
   &:checked~.item {
-    background-color: greenyellow;
+    background-color: green;
   }
 }

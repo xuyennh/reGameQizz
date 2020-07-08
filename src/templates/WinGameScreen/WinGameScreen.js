@@ -12,7 +12,7 @@ function WinGame(props) {
       <div class="${styles.form}">
         <h2>Chúc Mừng Bạn, Bạn Đã Chiến Thắng!</h2>
         <div>Tổng số điểm bạn đạt được là: ${props.totalScore}</div>
-        <button id="restart" class="${styles.btn}">Chơi Lại</button>
+        <button id="replay" class="${styles.btn}">Chơi Lại</button>
       </div>
     </div>
   `;

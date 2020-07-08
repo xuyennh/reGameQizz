@@ -1,13 +1,18 @@
-import ButtonChooseAnswer from "../templates/button/ButtonChooseAnswer";
+import ButtonChooseAnswer from "../../templates/button/ButtonChooseAnswer";
 import {
   isVisibleModal,
   answerSelect,
   currentIndex,
   answerDecisionSelect,
   isCorrect,
-} from "../store";
-import ModalChoseAnswer from "../templates/ModalChoseAnswer/ModalChoseAnswer";
-import data from "../api/data";
+  totalScore,
+  help5050,
+  helpCall,
+  helpLooker,
+} from "../../store";
+import ModalChoseAnswer from "../../templates/ModalChoseAnswer/ModalChoseAnswer";
+import { listquestion } from "../../api/randomQuestion";
+import route from "../../route";
 
 export default class ButtonNextQuestionContainer {
   constructor() {
@@ -39,7 +44,7 @@ export default class ButtonNextQuestionContainer {
 
   getMainState() {
     const currentIndexState = currentIndex.get();
-    const mainState = data[currentIndexState];
+    const mainState = listquestion[currentIndexState];
     return mainState;
   }
 
@@ -49,13 +54,35 @@ export default class ButtonNextQuestionContainer {
   }
   // xử lí khi bấm Ok quyết định chọn đáp án
   handleModalChooseAnswerOk(onclose) {
-    const { answers } = this.getQuizze();
+    const { answers, score } = this.getQuizze();
     const answerSelectState = answerSelect.get();
+    const helper5050State = help5050.get();
+    console.log(status);
     isCorrect.setIsCorrect(answers, answerSelectState);
     const isCorrectState = isCorrect.get();
     if (isCorrectState) {
+      totalScore.setTotalScore(score);
+      currentIndex.select((currentIndexState) => {
+        if (currentIndexState === listquestion.length) {
+          currentIndex.resetCurrentIndex();
+          route.to("win_game");
+        }
+      });
       answerSelect.setNameAnswer("default");
-      currentIndex.setCurrentIndex();
+      currentIndex.setCurrentIndex(); // Tăng Index;
+    } else {
+      currentIndex.resetCurrentIndex();
+      route.to("lose_game");
+    }
+
+    if (helpCall.get().used) {
+      helpCall.resetHelpCallData();
+    }
+    if (help5050.get().used) {
+      help5050.resetHelp5050Data();
+    }
+    if (helpLooker.get().used) {
+      helpLooker.resetHelpLookerData();
     }
     isVisibleModal.setVisibleModal(false);
     onclose();

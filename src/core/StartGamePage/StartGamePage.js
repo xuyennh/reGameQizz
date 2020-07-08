@@ -1,8 +1,9 @@
-import HomeScreen from "../templates/HomeScreen/HomeScreen";
-import { textHomeScreen } from "../api/content";
-import { isStart, userName } from "../store";
+import HomeScreen from "../../templates/HomeScreen/HomeScreen";
+import { textHomeScreen } from "../../api/content";
+import { isStart, userName, helpLooker } from "../../store";
+import route from "../../route";
 
-export default class StartGameContainer {
+export default class StartGamePage {
   constructor() {
     this._handleStartGame = this._handleStartGame.bind(this);
   }
@@ -13,14 +14,17 @@ export default class StartGameContainer {
   _handleStartGame(event) {
     event.preventDefault();
     const inputName = document.getElementById("inputName");
-    const textWarning = document.querySelector("#text-warning");
+    // const textWarning = document.querySelector("#text-warning");
     const { value } = inputName;
-    const isStartState = !!value;
     // set isStart = true khi bắt đầu game và lấy tên người chơi nhập vào
     if (value == "") {
-      textWarning.textContent = `Nhập Tên Trước Khi Chơi!`;
+      return alert("Ban can nhap ten");
     }
-    isStart.setIsStart(isStartState);
+    userName.select((userNameState) => {
+      if (userNameState) {
+        route.to("play_game");
+      }
+    });
     userName.setUserName(value);
   }
   handleDOM() {

@@ -1,5 +1,5 @@
-import Answer from "../templates/Answer/Answer";
-import { answerSelect } from "../store";
+import Answer from "../../templates/Answer/Answer";
+import { answerSelect } from "../../store";
 export default class ShowAnswerContainer {
   constructor() {}
   render(answer, id) {

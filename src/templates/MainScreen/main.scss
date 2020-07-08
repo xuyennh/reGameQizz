@@ -1,18 +1,27 @@
 .main {
   background-image: linear-gradient(to right bottom, #5a83ac, #000000d9);
-  height: 100vh;
   background-size: cover;
+  display: flex;
+  height: 100vh;
   position: relative;
   background-repeat: no-repeat;
 }
+
+.col8 {
+  width: 70%;
+}
+
+.col4 {
+  width: 30%;
+}
+
 .game {
-  position: absolute;
-  width: 75%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .question {
@@ -54,13 +63,14 @@
   color: #b1b1b1;
 }
 
-.showscore {
-  position: absolute;
-  right: 0px;
-  top: 0px;
+.board {
   border: 1px solid wheat;
-  height: 100vh;
-  width: 25%;
+  height: 100%;
+}
+
+.boardbelow {
+  width: 100%;
+  text-align: center;
 }
 
 .btn {
@@ -80,18 +90,10 @@
   font-family: cursive;
   font-style: italic;
   text-decoration: underline;
-  position: absolute;
-  top: 35%;
-  left: 20%;
-  transform: translate(-40%);
   font-size: 25px;
 }
 
 .scorequestion {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 100px;
   color: burlywood;
   font-family: fantasy;
@@ -99,10 +101,6 @@
 }
 
 .btnstop {
-  position: absolute;
-  bottom: 30%;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: black;
   border: 0;
   padding: 10px 20px;
@@ -111,16 +109,12 @@
   border-radius: 5%;
   color: #feffd4;
   font-weight: bold;
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-top: 40px;
 }
 
 .countdown {
-  position: absolute;
-  left: 50%;
   font-family: serif;
   font-style: italic;
-  transform: translateX(-50%);
   font-size: 70px;
   margin-top: 40px;
   color: red;
@@ -128,4 +122,19 @@
 
 .modal {
   width: 50%;
+}
+
+.help {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.helptext {
+  padding: 5px 0;
 }

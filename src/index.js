@@ -4,5 +4,4 @@ import "./styles/style.scss";
 
 new QuizzGame({
   el: document.getElementById("root"),
-  data: data,
 });
