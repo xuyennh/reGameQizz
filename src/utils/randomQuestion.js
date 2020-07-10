@@ -1,6 +1,6 @@
-import data from "./data";
+import data from "../api/data";
 import { random } from "../utils";
-import { config } from "./config";
+import { config } from "../api/config";
 
 function levelEasy(data) {
   return data.filter((item) => {
@@ -32,9 +32,9 @@ function listQuestion() {
 }
 const questions = config.maximum_question / 3;
 const listquestion = [
-  ...listQuestion().easy.slice(0, 4),
-  ...listQuestion().normal.slice(0, 3),
-  ...listQuestion().hard.slice(0, 2),
+  ...listQuestion().easy.slice(0, 6),
+  ...listQuestion().normal.slice(0, 5),
+  ...listQuestion().hard.slice(0, 4),
 ];
 
 export { listquestion };

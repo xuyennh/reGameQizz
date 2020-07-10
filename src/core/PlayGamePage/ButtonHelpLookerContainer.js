@@ -4,7 +4,7 @@ import {
   currentIndex,
   helpLooker,
 } from "../../store";
-import { listquestion } from "../../api/randomQuestion";
+import { listquestion } from "../../utils";
 
 export default class ButtonHelpLookerContainer {
   constructor() {

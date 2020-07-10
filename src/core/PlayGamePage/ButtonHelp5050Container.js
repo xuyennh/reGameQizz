@@ -1,6 +1,5 @@
 import { isCorrect, currentIndex, help5050 } from "../../store";
-import { listquestion } from "../../api/randomQuestion";
-import { answersDefault } from "../../api/content";
+import { listquestion } from "../../utils";
 import { random } from "../../utils";
 
 export default class ButtonHelp5050Container {

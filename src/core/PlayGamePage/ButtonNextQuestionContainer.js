@@ -11,7 +11,7 @@ import {
   helpLooker,
 } from "../../store";
 import ModalChoseAnswer from "../../templates/ModalChoseAnswer/ModalChoseAnswer";
-import { listquestion } from "../../api/randomQuestion";
+import { listquestion } from "../../utils";
 import route from "../../route";
 
 export default class ButtonNextQuestionContainer {

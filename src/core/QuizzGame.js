@@ -3,7 +3,7 @@ import StartGamePage from "./StartGamePage/StartGamePage";
 import PlayGamePage from "./PlayGamePage/PlayGamePage";
 import LoseGamePage from "./LoseGamePage/LoseGamePage";
 import WinGamePage from "./WinGamePage/WinGamePage";
-import { listquestion } from "../api/randomQuestion";
+import { listquestion } from "../utils";
 
 import {
   answerDecisionSelect,

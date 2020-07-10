@@ -128,21 +128,21 @@ var data = [{
   id: 1,
   level: "easy",
   quizze: {
-    question: "Ở Việt Nam, rồng bay ở đâu và đáp ở đâu?",
+    question: "Đâu là tên một bãi biển ở Quảng Bình?",
     answers: [{
-      value: "A: Hà Nội và Long An",
+      value: "A: Đá Lăn",
       name: "a",
       isCorrect: false
     }, {
-      value: "B: Hà nội và Quảng Ninh",
+      value: "B: Đá Chạy",
       name: "b",
       isCorrect: false
     }, {
-      value: "C: Thăng Long và Hạ Long",
+      value: "C: Đá Nhảy",
       name: "c",
       isCorrect: true
     }, {
-      value: "D: Quảng Ninh và Long An",
+      value: "D: Đá Bò",
       name: "d",
       isCorrect: false
     }],
@@ -152,23 +152,23 @@ var data = [{
   id: 2,
   level: "easy",
   quizze: {
-    question: "Người đẹp Monalisa không có thứ gì?",
+    question: "Thơ Hai-Cư là thể thơ truyển thống của nước nào?",
     answers: [{
-      value: "A: Tiền",
+      value: "A: Hàn Quốc",
       name: "a",
       isCorrect: false
     }, {
-      value: "B: Lông Chân",
+      value: "B: Nhật Bản",
       name: "b",
-      isCorrect: false
+      isCorrect: true
     }, {
-      value: "C: Lông Mày",
+      value: "C: Triều Tiên",
       name: "c",
       isCorrect: false
     }, {
-      value: "D: Chồng",
+      value: "D: Mông Cổ",
       name: "d",
-      isCorrect: true
+      isCorrect: false
     }],
     score: 200
   }
@@ -176,21 +176,21 @@ var data = [{
   id: 3,
   level: "easy",
   quizze: {
-    question: "Bệnh gì bác sỹ bó tay?",
+    question: "Đâu là tên một loại bánh Huế??",
     answers: [{
-      value: "A: Gãy tay",
+      value: "A: Khoái",
       name: "a",
       isCorrect: true
     }, {
-      value: "B: Siđa",
+      value: "B: Sướng",
       name: "b",
       isCorrect: false
     }, {
-      value: "C: Bệnh sĩ",
+      value: "C: Thích",
       name: "c",
       isCorrect: false
     }, {
-      value: "D: HIV",
+      value: "D: Vui",
       name: "d",
       isCorrect: false
     }],
@@ -198,49 +198,49 @@ var data = [{
   }
 }, {
   id: 4,
-  level: "normal",
+  level: "easy",
   quizze: {
-    question: "Sở thú bị cháy, con gì chạy ra đầu tiên?",
+    question: "Nhạc sĩ nào là người sáng tác ca khúc Cây Đàn Sinh Viên?",
     answers: [{
-      value: "A: Con chim",
+      value: "A: Bảo Chấn",
       name: "a",
       isCorrect: false
     }, {
-      value: "B: Con Người",
+      value: "B: Trịnh Công Sơn",
       name: "b",
-      isCorrect: true
+      isCorrect: false
     }, {
-      value: "C: Con rắn",
+      value: "C: Trần Tiến",
       name: "c",
       isCorrect: false
     }, {
-      value: "D: Con Tê Giác",
+      value: "D: Quốc An",
       name: "d",
-      isCorrect: false
+      isCorrect: true
     }],
     score: 500
   }
 }, {
   id: 5,
-  level: "normal",
+  level: "easy",
   quizze: {
-    question: "Nơi nào con trai có thể sinh con?",
+    question: "Bộ phim Chị Dậu được chuyển thể từ tác phẩm nào?",
     answers: [{
-      value: "A: Trong Nhà",
+      value: "A: Người mẹ cầm súng",
       name: "a",
       isCorrect: false
     }, {
-      value: "B: Rừng Rậm",
+      value: "B: Vợ chồng A Phủ",
       name: "b",
       isCorrect: false
     }, {
-      value: "C: Dưới Nước",
+      value: "C: Tuổi thơ dữ dội",
       name: "c",
-      isCorrect: true
-    }, {
-      value: "D: Đáp Án Khác",
-      name: "d",
       isCorrect: false
+    }, {
+      value: "D: Tắt đèn",
+      name: "d",
+      isCorrect: true
     }],
     score: 500
   }
@@ -435,6 +435,150 @@ var data = [{
       isCorrect: false
     }],
     score: 1000
+  }
+}, {
+  id: 14,
+  level: "normal",
+  quizze: {
+    question: "Vườn quốc gia nào hiện không nằm trong danh sách Vườn di sản ASEAN?",
+    answers: [{
+      value: "A:  Vườn quốc gia Kon Ka Kinh",
+      name: "a",
+      isCorrect: false
+    }, {
+      value: "B: Vườn quốc gia Tam Đảo",
+      name: "b",
+      isCorrect: true
+    }, {
+      value: "C: Vườn quốc gia Chư Mom Ray",
+      name: "c",
+      isCorrect: false
+    }, {
+      value: "D: Vườn quốc gia Bái Tử Long",
+      name: "d",
+      isCorrect: false
+    }],
+    score: 1000
+  }
+}, {
+  id: 15,
+  level: "normal",
+  quizze: {
+    question: "Hoa hậu Hòa bình Quốc tế 2017 đã được tổ chức tại quốc gia nào?",
+    answers: [{
+      value: "A: Thái Lan",
+      name: "a",
+      isCorrect: false
+    }, {
+      value: "B: Việt Nam",
+      name: "b",
+      isCorrect: true
+    }, {
+      value: "C: Lào",
+      name: "c",
+      isCorrect: false
+    }, {
+      value: "D: Campuchia",
+      name: "d",
+      isCorrect: false
+    }],
+    score: 500
+  }
+}, {
+  id: 16,
+  level: "easy",
+  quizze: {
+    question: "Lễ hội đua bò bảy núi là lễ hội đặc sắc của dân tộc nào sau đây?",
+    answers: [{
+      value: "A: Thái",
+      name: "a",
+      isCorrect: false
+    }, {
+      value: "B: Chăm",
+      name: "b",
+      isCorrect: false
+    }, {
+      value: "C: Tày",
+      name: "c",
+      isCorrect: false
+    }, {
+      value: "D: Khmer",
+      name: "d",
+      isCorrect: true
+    }],
+    score: 200
+  }
+}, {
+  id: 17,
+  level: "easy",
+  quizze: {
+    question: "Trong các cây cầu sau, cầu nào là cầu xoay?",
+    answers: [{
+      value: "A: Cầu Thanh Trì",
+      name: "a",
+      isCorrect: false
+    }, {
+      value: "B: Cầu Thị Nại",
+      name: "b",
+      isCorrect: false
+    }, {
+      value: "C: Cầu Sông Hàn",
+      name: "c",
+      isCorrect: true
+    }, {
+      value: "D: Cầu Cần Thơ",
+      name: "d",
+      isCorrect: false
+    }],
+    score: 200
+  }
+}, {
+  id: 18,
+  level: "easy",
+  quizze: {
+    question: "Các vua Hùng đặt quốc hiệu nước ta là gì?",
+    answers: [{
+      value: "A: Văn Lang",
+      name: "a",
+      isCorrect: true
+    }, {
+      value: "B: Âu Lạc",
+      name: "b",
+      isCorrect: false
+    }, {
+      value: "C: Vạn Xuân",
+      name: "c",
+      isCorrect: false
+    }, {
+      value: "D: Đại Việt",
+      name: "d",
+      isCorrect: false
+    }],
+    score: 300
+  }
+}, {
+  id: 19,
+  level: "easy",
+  quizze: {
+    question: "An Dương Vương đặt quốc hiệu nước ta là gì?",
+    answers: [{
+      value: "A: Âu Lạc",
+      name: "a",
+      isCorrect: true
+    }, {
+      value: "B: Vạn Xuân",
+      name: "b",
+      isCorrect: false
+    }, {
+      value: "C: Đại Cồ Việt",
+      name: "c",
+      isCorrect: false
+    }, {
+      value: "D: Đại Việt",
+      name: "d",
+      isCorrect: false
+    }],
+    score: 200
   }
 }];
 var _default = data;
@@ -921,7 +1065,108 @@ var Container = /*#__PURE__*/function () {
 
 exports.default = Container;
 Container.defaultProps = {};
-},{"@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js"}],"src/utils/index.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js"}],"node_modules/@babel/runtime/helpers/arrayWithoutHoles.js":[function(require,module,exports) {
+var arrayLikeToArray = require("./arrayLikeToArray");
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return arrayLikeToArray(arr);
+}
+
+module.exports = _arrayWithoutHoles;
+},{"./arrayLikeToArray":"node_modules/@babel/runtime/helpers/arrayLikeToArray.js"}],"node_modules/@babel/runtime/helpers/iterableToArray.js":[function(require,module,exports) {
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+}
+
+module.exports = _iterableToArray;
+},{}],"node_modules/@babel/runtime/helpers/nonIterableSpread.js":[function(require,module,exports) {
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+module.exports = _nonIterableSpread;
+},{}],"node_modules/@babel/runtime/helpers/toConsumableArray.js":[function(require,module,exports) {
+var arrayWithoutHoles = require("./arrayWithoutHoles");
+
+var iterableToArray = require("./iterableToArray");
+
+var unsupportedIterableToArray = require("./unsupportedIterableToArray");
+
+var nonIterableSpread = require("./nonIterableSpread");
+
+function _toConsumableArray(arr) {
+  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
+}
+
+module.exports = _toConsumableArray;
+},{"./arrayWithoutHoles":"node_modules/@babel/runtime/helpers/arrayWithoutHoles.js","./iterableToArray":"node_modules/@babel/runtime/helpers/iterableToArray.js","./unsupportedIterableToArray":"node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js","./nonIterableSpread":"node_modules/@babel/runtime/helpers/nonIterableSpread.js"}],"src/api/config.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.config = void 0;
+var config = {
+  maximum_question: 9,
+  help_5050: true,
+  help_call: true,
+  help_looker: true
+};
+exports.config = config;
+},{}],"src/utils/randomQuestion.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.listquestion = void 0;
+
+var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers/toConsumableArray"));
+
+var _data = _interopRequireDefault(require("../api/data"));
+
+var _utils = require("../utils");
+
+var _config = require("../api/config");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function levelEasy(data) {
+  return data.filter(function (item) {
+    return item.level === "easy";
+  });
+}
+
+function levelNormal(data) {
+  return data.filter(function (item) {
+    return item.level === "normal";
+  });
+}
+
+function levelHard(data) {
+  return data.filter(function (item) {
+    return item.level === "hard";
+  });
+}
+
+function listQuestion() {
+  var easy = _utils.random.ramdomAllvalue(levelEasy(_data.default));
+
+  var normal = _utils.random.ramdomAllvalue(levelNormal(_data.default));
+
+  var hard = _utils.random.ramdomAllvalue(levelHard(_data.default));
+
+  return {
+    easy: [].concat((0, _toConsumableArray2.default)(easy), (0, _toConsumableArray2.default)(normal)),
+    normal: [].concat((0, _toConsumableArray2.default)(normal), (0, _toConsumableArray2.default)(hard)),
+    hard: (0, _toConsumableArray2.default)(hard)
+  };
+}
+
+var questions = _config.config.maximum_question / 3;
+var listquestion = [].concat((0, _toConsumableArray2.default)(listQuestion().easy.slice(0, 6)), (0, _toConsumableArray2.default)(listQuestion().normal.slice(0, 5)), (0, _toConsumableArray2.default)(listQuestion().hard.slice(0, 4)));
+exports.listquestion = listquestion;
+},{"@babel/runtime/helpers/toConsumableArray":"node_modules/@babel/runtime/helpers/toConsumableArray.js","../api/data":"src/api/data.js","../utils":"src/utils/index.js","../api/config":"src/api/config.js"}],"src/utils/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -957,6 +1202,12 @@ Object.defineProperty(exports, "Container", {
     return _Container.default;
   }
 });
+Object.defineProperty(exports, "listquestion", {
+  enumerable: true,
+  get: function () {
+    return _randomQuestion.listquestion;
+  }
+});
 
 var _createState = _interopRequireDefault(require("./createState"));
 
@@ -968,8 +1219,10 @@ var _counter = _interopRequireDefault(require("./counter"));
 
 var _Container = _interopRequireDefault(require("./Container"));
 
+var _randomQuestion = require("./randomQuestion");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./createState":"src/utils/createState.js","./logger":"src/utils/logger.js","./random":"src/utils/random.js","./counter":"src/utils/counter.js","./Container":"src/utils/Container.js"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./createState":"src/utils/createState.js","./logger":"src/utils/logger.js","./random":"src/utils/random.js","./counter":"src/utils/counter.js","./Container":"src/utils/Container.js","./randomQuestion":"src/utils/randomQuestion.js"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -2391,108 +2644,7 @@ function ModalChoseAnswer(_ref) {
 
 var _default = ModalChoseAnswer;
 exports.default = _default;
-},{"@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","../Modal/Modal":"src/templates/Modal/Modal.js","./style.scss":"src/templates/ModalChoseAnswer/style.scss"}],"node_modules/@babel/runtime/helpers/arrayWithoutHoles.js":[function(require,module,exports) {
-var arrayLikeToArray = require("./arrayLikeToArray");
-
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return arrayLikeToArray(arr);
-}
-
-module.exports = _arrayWithoutHoles;
-},{"./arrayLikeToArray":"node_modules/@babel/runtime/helpers/arrayLikeToArray.js"}],"node_modules/@babel/runtime/helpers/iterableToArray.js":[function(require,module,exports) {
-function _iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
-}
-
-module.exports = _iterableToArray;
-},{}],"node_modules/@babel/runtime/helpers/nonIterableSpread.js":[function(require,module,exports) {
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-module.exports = _nonIterableSpread;
-},{}],"node_modules/@babel/runtime/helpers/toConsumableArray.js":[function(require,module,exports) {
-var arrayWithoutHoles = require("./arrayWithoutHoles");
-
-var iterableToArray = require("./iterableToArray");
-
-var unsupportedIterableToArray = require("./unsupportedIterableToArray");
-
-var nonIterableSpread = require("./nonIterableSpread");
-
-function _toConsumableArray(arr) {
-  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
-}
-
-module.exports = _toConsumableArray;
-},{"./arrayWithoutHoles":"node_modules/@babel/runtime/helpers/arrayWithoutHoles.js","./iterableToArray":"node_modules/@babel/runtime/helpers/iterableToArray.js","./unsupportedIterableToArray":"node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js","./nonIterableSpread":"node_modules/@babel/runtime/helpers/nonIterableSpread.js"}],"src/api/config.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.config = void 0;
-var config = {
-  maximum_question: 9,
-  help_5050: true,
-  help_call: true,
-  help_looker: true
-};
-exports.config = config;
-},{}],"src/api/randomQuestion.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.listquestion = void 0;
-
-var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers/toConsumableArray"));
-
-var _data = _interopRequireDefault(require("./data"));
-
-var _utils = require("../utils");
-
-var _config = require("./config");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function levelEasy(data) {
-  return data.filter(function (item) {
-    return item.level === "easy";
-  });
-}
-
-function levelNormal(data) {
-  return data.filter(function (item) {
-    return item.level === "normal";
-  });
-}
-
-function levelHard(data) {
-  return data.filter(function (item) {
-    return item.level === "hard";
-  });
-}
-
-function listQuestion() {
-  var easy = _utils.random.ramdomAllvalue(levelEasy(_data.default));
-
-  var normal = _utils.random.ramdomAllvalue(levelNormal(_data.default));
-
-  var hard = _utils.random.ramdomAllvalue(levelHard(_data.default));
-
-  return {
-    easy: [].concat((0, _toConsumableArray2.default)(easy), (0, _toConsumableArray2.default)(normal)),
-    normal: [].concat((0, _toConsumableArray2.default)(normal), (0, _toConsumableArray2.default)(hard)),
-    hard: (0, _toConsumableArray2.default)(hard)
-  };
-}
-
-var questions = _config.config.maximum_question / 3;
-var listquestion = [].concat((0, _toConsumableArray2.default)(listQuestion().easy.slice(0, 4)), (0, _toConsumableArray2.default)(listQuestion().normal.slice(0, 3)), (0, _toConsumableArray2.default)(listQuestion().hard.slice(0, 2)));
-exports.listquestion = listquestion;
-},{"@babel/runtime/helpers/toConsumableArray":"node_modules/@babel/runtime/helpers/toConsumableArray.js","./data":"src/api/data.js","../utils":"src/utils/index.js","./config":"src/api/config.js"}],"src/core/PlayGamePage/ButtonNextQuestionContainer.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","../Modal/Modal":"src/templates/Modal/Modal.js","./style.scss":"src/templates/ModalChoseAnswer/style.scss"}],"src/core/PlayGamePage/ButtonNextQuestionContainer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2510,7 +2662,7 @@ var _store = require("../../store");
 
 var _ModalChoseAnswer = _interopRequireDefault(require("../../templates/ModalChoseAnswer/ModalChoseAnswer"));
 
-var _randomQuestion = require("../../api/randomQuestion");
+var _utils = require("../../utils");
 
 var _route = _interopRequireDefault(require("../../route"));
 
@@ -2554,7 +2706,7 @@ var ButtonNextQuestionContainer = /*#__PURE__*/function () {
     value: function getMainState() {
       var currentIndexState = _store.currentIndex.get();
 
-      var mainState = _randomQuestion.listquestion[currentIndexState];
+      var mainState = _utils.listquestion[currentIndexState];
       return mainState;
     }
   }, {
@@ -2587,7 +2739,7 @@ var ButtonNextQuestionContainer = /*#__PURE__*/function () {
         _store.totalScore.setTotalScore(score);
 
         _store.currentIndex.select(function (currentIndexState) {
-          if (currentIndexState === _randomQuestion.listquestion.length) {
+          if (currentIndexState === _utils.listquestion.length) {
             _store.currentIndex.resetCurrentIndex();
 
             _route.default.to("win_game");
@@ -2638,7 +2790,7 @@ var ButtonNextQuestionContainer = /*#__PURE__*/function () {
 }();
 
 exports.default = ButtonNextQuestionContainer;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/button/ButtonChooseAnswer":"src/templates/button/ButtonChooseAnswer.js","../../store":"src/store/index.js","../../templates/ModalChoseAnswer/ModalChoseAnswer":"src/templates/ModalChoseAnswer/ModalChoseAnswer.js","../../api/randomQuestion":"src/api/randomQuestion.js","../../route":"src/route.js"}],"src/templates/EndGameScreen/EndGameScreen.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/button/ButtonChooseAnswer":"src/templates/button/ButtonChooseAnswer.js","../../store":"src/store/index.js","../../templates/ModalChoseAnswer/ModalChoseAnswer":"src/templates/ModalChoseAnswer/ModalChoseAnswer.js","../../utils":"src/utils/index.js","../../route":"src/route.js"}],"src/templates/EndGameScreen/EndGameScreen.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2725,7 +2877,7 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 
 var _store = require("../../store");
 
-var _randomQuestion = require("../../api/randomQuestion");
+var _utils = require("../../utils");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2743,7 +2895,7 @@ var ButtonHelpCallContainer = /*#__PURE__*/function () {
     value: function getMainState() {
       var currentIndexState = _store.currentIndex.get();
 
-      var mainState = _randomQuestion.listquestion[currentIndexState];
+      var mainState = _utils.listquestion[currentIndexState];
       return mainState;
     }
   }, {
@@ -2780,7 +2932,7 @@ var ButtonHelpCallContainer = /*#__PURE__*/function () {
 }();
 
 exports.default = ButtonHelpCallContainer;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../store":"src/store/index.js","../../api/randomQuestion":"src/api/randomQuestion.js"}],"src/core/PlayGamePage/CountDownContainer.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../store":"src/store/index.js","../../utils":"src/utils/index.js"}],"src/core/PlayGamePage/CountDownContainer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2838,10 +2990,6 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 
 var _store = require("../../store");
 
-var _randomQuestion = require("../../api/randomQuestion");
-
-var _content = require("../../api/content");
-
 var _utils = require("../../utils");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -2860,7 +3008,7 @@ var ButtonHelp5050Container = /*#__PURE__*/function () {
     value: function getMainState() {
       var currentIndexState = _store.currentIndex.get();
 
-      var mainState = _randomQuestion.listquestion[currentIndexState];
+      var mainState = _utils.listquestion[currentIndexState];
       return mainState;
     }
   }, {
@@ -2900,7 +3048,7 @@ var ButtonHelp5050Container = /*#__PURE__*/function () {
 }();
 
 exports.default = ButtonHelp5050Container;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../store":"src/store/index.js","../../api/randomQuestion":"src/api/randomQuestion.js","../../api/content":"src/api/content.js","../../utils":"src/utils/index.js"}],"src/core/PlayGamePage/ButtonHelpLookerContainer.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../store":"src/store/index.js","../../utils":"src/utils/index.js"}],"src/core/PlayGamePage/ButtonHelpLookerContainer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2914,7 +3062,7 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 
 var _store = require("../../store");
 
-var _randomQuestion = require("../../api/randomQuestion");
+var _utils = require("../../utils");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2932,7 +3080,7 @@ var ButtonHelpLookerContainer = /*#__PURE__*/function () {
     value: function getMainState() {
       var currentIndexState = _store.currentIndex.get();
 
-      var mainState = _randomQuestion.listquestion[currentIndexState];
+      var mainState = _utils.listquestion[currentIndexState];
       return mainState;
     }
   }, {
@@ -2972,7 +3120,7 @@ var ButtonHelpLookerContainer = /*#__PURE__*/function () {
 }();
 
 exports.default = ButtonHelpLookerContainer;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../store":"src/store/index.js","../../api/randomQuestion":"src/api/randomQuestion.js"}],"src/templates/Progress/progress.scss":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../store":"src/store/index.js","../../utils":"src/utils/index.js"}],"src/templates/Progress/progress.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -3036,8 +3184,6 @@ var _ButtonNextQuestionContainer = _interopRequireDefault(require("./ButtonNextQ
 
 var _utils = require("../../utils");
 
-var _randomQuestion = require("../../api/randomQuestion");
-
 var _route = _interopRequireDefault(require("../../route"));
 
 var _ButtonStopTheGameContainer = _interopRequireDefault(require("./ButtonStopTheGameContainer"));
@@ -3079,7 +3225,7 @@ var PlayGamePage = /*#__PURE__*/function () {
     value: function getMainState() {
       var currentIndexState = _store.currentIndex.get();
 
-      var mainState = _randomQuestion.listquestion[currentIndexState];
+      var mainState = _utils.listquestion[currentIndexState];
       return mainState;
     }
   }, {
@@ -3206,7 +3352,7 @@ var PlayGamePage = /*#__PURE__*/function () {
 }();
 
 exports.default = PlayGamePage;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/MainScreen/MainScreen":"src/templates/MainScreen/MainScreen.js","../../api/data":"src/api/data.js","../../store":"src/store/index.js","./ShowAnswerContainer":"src/core/PlayGamePage/ShowAnswerContainer.js","./ButtonNextQuestionContainer":"src/core/PlayGamePage/ButtonNextQuestionContainer.js","../../utils":"src/utils/index.js","../../api/randomQuestion":"src/api/randomQuestion.js","../../route":"src/route.js","./ButtonStopTheGameContainer":"src/core/PlayGamePage/ButtonStopTheGameContainer.js","../../api/config":"src/api/config.js","./ButtonHelpCallContainer":"src/core/PlayGamePage/ButtonHelpCallContainer.js","./CountDownContainer":"src/core/PlayGamePage/CountDownContainer.js","./ButtonHelp5050Container":"src/core/PlayGamePage/ButtonHelp5050Container.js","./ButtonHelpLookerContainer":"src/core/PlayGamePage/ButtonHelpLookerContainer.js","../../templates/Progress/Progress":"src/templates/Progress/Progress.js"}],"src/core/LoseGamePage/LoseGamePage.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/MainScreen/MainScreen":"src/templates/MainScreen/MainScreen.js","../../api/data":"src/api/data.js","../../store":"src/store/index.js","./ShowAnswerContainer":"src/core/PlayGamePage/ShowAnswerContainer.js","./ButtonNextQuestionContainer":"src/core/PlayGamePage/ButtonNextQuestionContainer.js","../../utils":"src/utils/index.js","../../route":"src/route.js","./ButtonStopTheGameContainer":"src/core/PlayGamePage/ButtonStopTheGameContainer.js","../../api/config":"src/api/config.js","./ButtonHelpCallContainer":"src/core/PlayGamePage/ButtonHelpCallContainer.js","./CountDownContainer":"src/core/PlayGamePage/CountDownContainer.js","./ButtonHelp5050Container":"src/core/PlayGamePage/ButtonHelp5050Container.js","./ButtonHelpLookerContainer":"src/core/PlayGamePage/ButtonHelpLookerContainer.js","../../templates/Progress/Progress":"src/templates/Progress/Progress.js"}],"src/core/LoseGamePage/LoseGamePage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3224,7 +3370,7 @@ var _store = require("../../store");
 
 var _route = _interopRequireDefault(require("../../route"));
 
-var _randomQuestion = require("../../api/randomQuestion");
+var _utils = require("../../utils");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3273,7 +3419,7 @@ var LoseGamePage = /*#__PURE__*/function () {
 }();
 
 exports.default = LoseGamePage;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/EndGameScreen/EndGameScreen":"src/templates/EndGameScreen/EndGameScreen.js","../../store":"src/store/index.js","../../route":"src/route.js","../../api/randomQuestion":"src/api/randomQuestion.js"}],"src/templates/WinGameScreen/WinGameScreen.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/EndGameScreen/EndGameScreen":"src/templates/EndGameScreen/EndGameScreen.js","../../store":"src/store/index.js","../../route":"src/route.js","../../utils":"src/utils/index.js"}],"src/templates/WinGameScreen/WinGameScreen.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3316,7 +3462,7 @@ var _WinGameScreen = _interopRequireDefault(require("../../templates/WinGameScre
 
 var _store = require("../../store");
 
-var _randomQuestion = require("../../api/randomQuestion");
+var _utils = require("../../utils");
 
 var _route = _interopRequireDefault(require("../../route"));
 
@@ -3366,7 +3512,7 @@ var WinGamePage = /*#__PURE__*/function () {
 }();
 
 exports.default = WinGamePage;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/WinGameScreen/WinGameScreen":"src/templates/WinGameScreen/WinGameScreen.js","../../store":"src/store/index.js","../../api/randomQuestion":"src/api/randomQuestion.js","../../route":"src/route.js"}],"src/core/quizzGame.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/WinGameScreen/WinGameScreen":"src/templates/WinGameScreen/WinGameScreen.js","../../store":"src/store/index.js","../../utils":"src/utils/index.js","../../route":"src/route.js"}],"src/core/quizzGame.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3393,8 +3539,6 @@ var _PlayGamePage = _interopRequireDefault(require("./PlayGamePage/PlayGamePage"
 var _LoseGamePage = _interopRequireDefault(require("./LoseGamePage/LoseGamePage"));
 
 var _WinGamePage = _interopRequireDefault(require("./WinGamePage/WinGamePage"));
-
-var _randomQuestion = require("../api/randomQuestion");
 
 var _store = require("../store");
 
@@ -3484,7 +3628,7 @@ var QuizzGame = /*#__PURE__*/function (_Container) {
 }(_utils.Container);
 
 exports.default = QuizzGame;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","../utils":"src/utils/index.js","./StartGamePage/StartGamePage":"src/core/StartGamePage/StartGamePage.js","./PlayGamePage/PlayGamePage":"src/core/PlayGamePage/PlayGamePage.js","./LoseGamePage/LoseGamePage":"src/core/LoseGamePage/LoseGamePage.js","./WinGamePage/WinGamePage":"src/core/WinGamePage/WinGamePage.js","../api/randomQuestion":"src/api/randomQuestion.js","../store":"src/store/index.js","../route":"src/route.js"}],"src/styles/style.scss":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","../utils":"src/utils/index.js","./StartGamePage/StartGamePage":"src/core/StartGamePage/StartGamePage.js","./PlayGamePage/PlayGamePage":"src/core/PlayGamePage/PlayGamePage.js","./LoseGamePage/LoseGamePage":"src/core/LoseGamePage/LoseGamePage.js","./WinGamePage/WinGamePage":"src/core/WinGamePage/WinGamePage.js","../store":"src/store/index.js","../route":"src/route.js"}],"src/styles/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -3532,7 +3676,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59609" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64565" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

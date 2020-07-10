@@ -8,7 +8,7 @@ import {
   help5050,
   helpLooker,
 } from "../../store";
-import { listquestion } from "../../api/randomQuestion";
+import { listquestion } from "../../utils";
 import route from "../../route";
 
 export default class WinGamePage {

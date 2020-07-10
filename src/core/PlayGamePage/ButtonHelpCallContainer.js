@@ -5,7 +5,7 @@ import {
   currentIndex,
   helpCall,
 } from "../../store";
-import { listquestion } from "../../api/randomQuestion";
+import { listquestion } from "../../utils";
 
 export default class ButtonHelpCallContainer {
   constructor() {

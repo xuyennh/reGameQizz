@@ -11,7 +11,7 @@ import {
 import ShowAnswerContainer from "./ShowAnswerContainer";
 import ButtonNextQuestionContainer from "./ButtonNextQuestionContainer";
 import { random } from "../../utils";
-import { listquestion } from "../../api/randomQuestion";
+import { listquestion } from "../../utils";
 import route from "../../route";
 import ButtonStopTheGameContainer from "./ButtonStopTheGameContainer";
 import { config } from "../../api/config";

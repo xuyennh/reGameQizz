@@ -3,25 +3,25 @@ const data = [
     id: 1,
     level: "easy",
     quizze: {
-      question: "Ở Việt Nam, rồng bay ở đâu và đáp ở đâu?",
+      question: "Đâu là tên một bãi biển ở Quảng Bình?",
       answers: [
         {
-          value: "A: Hà Nội và Long An",
+          value: "A: Đá Lăn",
           name: "a",
           isCorrect: false,
         },
         {
-          value: "B: Hà nội và Quảng Ninh",
+          value: "B: Đá Chạy",
           name: "b",
           isCorrect: false,
         },
         {
-          value: "C: Thăng Long và Hạ Long",
+          value: "C: Đá Nhảy",
           name: "c",
           isCorrect: true,
         },
         {
-          value: "D: Quảng Ninh và Long An",
+          value: "D: Đá Bò",
           name: "d",
           isCorrect: false,
         },
@@ -33,12 +33,12 @@ const data = [
     id: 2,
     level: "easy",
     quizze: {
-      question: "Người đẹp Monalisa không có thứ gì?",
+      question: "Thơ Hai-Cư là thể thơ truyển thống của nước nào?",
       answers: [
-        { value: "A: Tiền", name: "a", isCorrect: false },
-        { value: "B: Lông Chân", name: "b", isCorrect: false },
-        { value: "C: Lông Mày", name: "c", isCorrect: false },
-        { value: "D: Chồng", name: "d", isCorrect: true },
+        { value: "A: Hàn Quốc", name: "a", isCorrect: false },
+        { value: "B: Nhật Bản", name: "b", isCorrect: true },
+        { value: "C: Triều Tiên", name: "c", isCorrect: false },
+        { value: "D: Mông Cổ", name: "d", isCorrect: false },
       ],
       score: 200,
     },
@@ -47,40 +47,40 @@ const data = [
     id: 3,
     level: "easy",
     quizze: {
-      question: "Bệnh gì bác sỹ bó tay?",
+      question: "Đâu là tên một loại bánh Huế??",
       answers: [
-        { value: "A: Gãy tay", name: "a", isCorrect: true },
-        { value: "B: Siđa", name: "b", isCorrect: false },
-        { value: "C: Bệnh sĩ", name: "c", isCorrect: false },
-        { value: "D: HIV", name: "d", isCorrect: false },
+        { value: "A: Khoái", name: "a", isCorrect: true },
+        { value: "B: Sướng", name: "b", isCorrect: false },
+        { value: "C: Thích", name: "c", isCorrect: false },
+        { value: "D: Vui", name: "d", isCorrect: false },
       ],
       score: 200,
     },
   },
   {
     id: 4,
-    level: "normal",
+    level: "easy",
     quizze: {
-      question: "Sở thú bị cháy, con gì chạy ra đầu tiên?",
+      question: "Nhạc sĩ nào là người sáng tác ca khúc Cây Đàn Sinh Viên?",
       answers: [
-        { value: "A: Con chim", name: "a", isCorrect: false },
-        { value: "B: Con Người", name: "b", isCorrect: true },
-        { value: "C: Con rắn", name: "c", isCorrect: false },
-        { value: "D: Con Tê Giác", name: "d", isCorrect: false },
+        { value: "A: Bảo Chấn", name: "a", isCorrect: false },
+        { value: "B: Trịnh Công Sơn", name: "b", isCorrect: false },
+        { value: "C: Trần Tiến", name: "c", isCorrect: false },
+        { value: "D: Quốc An", name: "d", isCorrect: true },
       ],
       score: 500,
     },
   },
   {
     id: 5,
-    level: "normal",
+    level: "easy",
     quizze: {
-      question: "Nơi nào con trai có thể sinh con?",
+      question: "Bộ phim Chị Dậu được chuyển thể từ tác phẩm nào?",
       answers: [
-        { value: "A: Trong Nhà", name: "a", isCorrect: false },
-        { value: "B: Rừng Rậm", name: "b", isCorrect: false },
-        { value: "C: Dưới Nước", name: "c", isCorrect: true },
-        { value: "D: Đáp Án Khác", name: "d", isCorrect: false },
+        { value: "A: Người mẹ cầm súng", name: "a", isCorrect: false },
+        { value: "B: Vợ chồng A Phủ", name: "b", isCorrect: false },
+        { value: "C: Tuổi thơ dữ dội", name: "c", isCorrect: false },
+        { value: "D: Tắt đèn", name: "d", isCorrect: true },
       ],
       score: 500,
     },
@@ -199,6 +199,93 @@ const data = [
         { value: "D: Nhà Tây Sơn", name: "d", isCorrect: false },
       ],
       score: 1000,
+    },
+  },
+  {
+    id: 14,
+    level: "normal",
+    quizze: {
+      question:
+        "Vườn quốc gia nào hiện không nằm trong danh sách Vườn di sản ASEAN?",
+      answers: [
+        { value: "A:  Vườn quốc gia Kon Ka Kinh", name: "a", isCorrect: false },
+        { value: "B: Vườn quốc gia Tam Đảo", name: "b", isCorrect: true },
+        { value: "C: Vườn quốc gia Chư Mom Ray", name: "c", isCorrect: false },
+        { value: "D: Vườn quốc gia Bái Tử Long", name: "d", isCorrect: false },
+      ],
+      score: 1000,
+    },
+  },
+  {
+    id: 15,
+    level: "normal",
+    quizze: {
+      question:
+        "Hoa hậu Hòa bình Quốc tế 2017 đã được tổ chức tại quốc gia nào?",
+      answers: [
+        { value: "A: Thái Lan", name: "a", isCorrect: false },
+        { value: "B: Việt Nam", name: "b", isCorrect: true },
+        { value: "C: Lào", name: "c", isCorrect: false },
+        { value: "D: Campuchia", name: "d", isCorrect: false },
+      ],
+      score: 500,
+    },
+  },
+  {
+    id: 16,
+    level: "easy",
+    quizze: {
+      question:
+        "Lễ hội đua bò bảy núi là lễ hội đặc sắc của dân tộc nào sau đây?",
+      answers: [
+        { value: "A: Thái", name: "a", isCorrect: false },
+        { value: "B: Chăm", name: "b", isCorrect: false },
+        { value: "C: Tày", name: "c", isCorrect: false },
+        { value: "D: Khmer", name: "d", isCorrect: true },
+      ],
+      score: 200,
+    },
+  },
+  {
+    id: 17,
+    level: "easy",
+    quizze: {
+      question: "Trong các cây cầu sau, cầu nào là cầu xoay?",
+      answers: [
+        { value: "A: Cầu Thanh Trì", name: "a", isCorrect: false },
+        { value: "B: Cầu Thị Nại", name: "b", isCorrect: false },
+        { value: "C: Cầu Sông Hàn", name: "c", isCorrect: true },
+        { value: "D: Cầu Cần Thơ", name: "d", isCorrect: false },
+      ],
+      score: 200,
+    },
+  },
+  {
+    id: 18,
+    level: "easy",
+    quizze: {
+      question: "Các vua Hùng đặt quốc hiệu nước ta là gì?",
+      answers: [
+        { value: "A: Văn Lang", name: "a", isCorrect: true },
+        { value: "B: Âu Lạc", name: "b", isCorrect: false },
+        { value: "C: Vạn Xuân", name: "c", isCorrect: false },
+        { value: "D: Đại Việt", name: "d", isCorrect: false },
+      ],
+      score: 300,
+    },
+  },
+  {
+    id: 19,
+    level: "easy",
+    quizze: {
+      question: "An Dương Vương đặt quốc hiệu nước ta là gì?",
+      answers: [
+        { value: "A: Âu Lạc", name: "a", isCorrect: true },
+        { value: "B: Vạn Xuân", name: "b", isCorrect: false },
+        { value: "C: Đại Cồ Việt", name: "c", isCorrect: false },
+        { value: "D: Đại Việt", name: "d", isCorrect: false },
+      ],
+      score: 200,
     },
   },
 ];
