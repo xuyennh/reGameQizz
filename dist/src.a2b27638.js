@@ -117,473 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/api/data.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var data = [{
-  id: 1,
-  level: "easy",
-  quizze: {
-    question: "Đâu là tên một bãi biển ở Quảng Bình?",
-    answers: [{
-      value: "A: Đá Lăn",
-      name: "a",
-      isCorrect: false
-    }, {
-      value: "B: Đá Chạy",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Đá Nhảy",
-      name: "c",
-      isCorrect: true
-    }, {
-      value: "D: Đá Bò",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 200
-  }
-}, {
-  id: 2,
-  level: "easy",
-  quizze: {
-    question: "Thơ Hai-Cư là thể thơ truyển thống của nước nào?",
-    answers: [{
-      value: "A: Hàn Quốc",
-      name: "a",
-      isCorrect: false
-    }, {
-      value: "B: Nhật Bản",
-      name: "b",
-      isCorrect: true
-    }, {
-      value: "C: Triều Tiên",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Mông Cổ",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 200
-  }
-}, {
-  id: 3,
-  level: "easy",
-  quizze: {
-    question: "Đâu là tên một loại bánh Huế??",
-    answers: [{
-      value: "A: Khoái",
-      name: "a",
-      isCorrect: true
-    }, {
-      value: "B: Sướng",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Thích",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Vui",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 200
-  }
-}, {
-  id: 4,
-  level: "easy",
-  quizze: {
-    question: "Nhạc sĩ nào là người sáng tác ca khúc Cây Đàn Sinh Viên?",
-    answers: [{
-      value: "A: Bảo Chấn",
-      name: "a",
-      isCorrect: false
-    }, {
-      value: "B: Trịnh Công Sơn",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Trần Tiến",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Quốc An",
-      name: "d",
-      isCorrect: true
-    }],
-    score: 500
-  }
-}, {
-  id: 5,
-  level: "easy",
-  quizze: {
-    question: "Bộ phim Chị Dậu được chuyển thể từ tác phẩm nào?",
-    answers: [{
-      value: "A: Người mẹ cầm súng",
-      name: "a",
-      isCorrect: false
-    }, {
-      value: "B: Vợ chồng A Phủ",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Tuổi thơ dữ dội",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Tắt đèn",
-      name: "d",
-      isCorrect: true
-    }],
-    score: 500
-  }
-}, {
-  id: 6,
-  level: "normal",
-  quizze: {
-    question: "Trên Nhấp Dưới Giật Là Đang Làm gì?",
-    answers: [{
-      value: "A: Chơi Bóng Bàn",
-      name: "a",
-      isCorrect: false
-    }, {
-      value: "B: Đang Học",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Trộm Cắp",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Câu Cá",
-      name: "d",
-      isCorrect: true
-    }],
-    score: 500
-  }
-}, {
-  id: 7,
-  level: "easy",
-  quizze: {
-    question: "Con Đường Dài Nhất Là Con Đường Nào?",
-    answers: [{
-      value: "A: Đường Đời",
-      name: "a",
-      isCorrect: true
-    }, {
-      value: "B: Đường Đi Nước Ngoài",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Đường Đèo",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Đường Đi",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 200
-  }
-}, {
-  id: 8,
-  level: "easy",
-  quizze: {
-    question: "Con gì đầu dê mình ốc?",
-    answers: [{
-      value: "A: Con Ốc",
-      name: "a",
-      isCorrect: false
-    }, {
-      value: "B: Con Mương",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Con Đường",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Con Dốc",
-      name: "d",
-      isCorrect: true
-    }],
-    score: 200
-  }
-}, {
-  id: 9,
-  level: "easy",
-  quizze: {
-    question: "Cái gì của chồng mà vợ thích cầm nhất?",
-    answers: [{
-      value: "A: Tiền",
-      name: "a",
-      isCorrect: true
-    }, {
-      value: "B: Sách",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Tay",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Nhẫn",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 200
-  }
-}, {
-  id: 10,
-  level: "hard",
-  quizze: {
-    question: "Giải Grand Slam đầu tiên trong năm là giải nào?",
-    answers: [{
-      value: "A: Austrlia mở rộng",
-      name: "a",
-      isCorrect: true
-    }, {
-      value: "B: Wimbledon",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Roland Garos",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Mỹ mở rộng",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 1000
-  }
-}, {
-  id: 11,
-  level: "hard",
-  quizze: {
-    question: "AFC Asian Cup 2011 được tổ chức tại quốc gia nào?",
-    answers: [{
-      value: "A: Qatar",
-      name: "a",
-      isCorrect: true
-    }, {
-      value: "B: Hàn Quốc",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Nhật Bản",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Iraq",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 1000
-  }
-}, {
-  id: 12,
-  level: "normal",
-  quizze: {
-    question: "Sông Bến Hải và sông Thạch Hãn nằm ở tỉnh nào?",
-    answers: [{
-      value: "A: Quảng Bình",
-      name: "a",
-      isCorrect: false
-    }, {
-      value: "B: Quảng Ninh",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Quảng Trị",
-      name: "c",
-      isCorrect: true
-    }, {
-      value: "D: Quảng Ngãi",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 500
-  }
-}, {
-  id: 13,
-  level: "hard",
-  quizze: {
-    question: "Đại Ngu là quốc hiệu của triều đại nào?",
-    answers: [{
-      value: "A: Triều Ngô",
-      name: "a",
-      isCorrect: false
-    }, {
-      value: "B: Triều Hồ",
-      name: "b",
-      isCorrect: true
-    }, {
-      value: "C: Các chúa Nguyễn",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Nhà Tây Sơn",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 1000
-  }
-}, {
-  id: 14,
-  level: "normal",
-  quizze: {
-    question: "Vườn quốc gia nào hiện không nằm trong danh sách Vườn di sản ASEAN?",
-    answers: [{
-      value: "A:  Vườn quốc gia Kon Ka Kinh",
-      name: "a",
-      isCorrect: false
-    }, {
-      value: "B: Vườn quốc gia Tam Đảo",
-      name: "b",
-      isCorrect: true
-    }, {
-      value: "C: Vườn quốc gia Chư Mom Ray",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Vườn quốc gia Bái Tử Long",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 1000
-  }
-}, {
-  id: 15,
-  level: "normal",
-  quizze: {
-    question: "Hoa hậu Hòa bình Quốc tế 2017 đã được tổ chức tại quốc gia nào?",
-    answers: [{
-      value: "A: Thái Lan",
-      name: "a",
-      isCorrect: false
-    }, {
-      value: "B: Việt Nam",
-      name: "b",
-      isCorrect: true
-    }, {
-      value: "C: Lào",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Campuchia",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 500
-  }
-}, {
-  id: 16,
-  level: "easy",
-  quizze: {
-    question: "Lễ hội đua bò bảy núi là lễ hội đặc sắc của dân tộc nào sau đây?",
-    answers: [{
-      value: "A: Thái",
-      name: "a",
-      isCorrect: false
-    }, {
-      value: "B: Chăm",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Tày",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Khmer",
-      name: "d",
-      isCorrect: true
-    }],
-    score: 200
-  }
-}, {
-  id: 17,
-  level: "easy",
-  quizze: {
-    question: "Trong các cây cầu sau, cầu nào là cầu xoay?",
-    answers: [{
-      value: "A: Cầu Thanh Trì",
-      name: "a",
-      isCorrect: false
-    }, {
-      value: "B: Cầu Thị Nại",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Cầu Sông Hàn",
-      name: "c",
-      isCorrect: true
-    }, {
-      value: "D: Cầu Cần Thơ",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 200
-  }
-}, {
-  id: 18,
-  level: "easy",
-  quizze: {
-    question: "Các vua Hùng đặt quốc hiệu nước ta là gì?",
-    answers: [{
-      value: "A: Văn Lang",
-      name: "a",
-      isCorrect: true
-    }, {
-      value: "B: Âu Lạc",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Vạn Xuân",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Đại Việt",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 300
-  }
-}, {
-  id: 19,
-  level: "easy",
-  quizze: {
-    question: "An Dương Vương đặt quốc hiệu nước ta là gì?",
-    answers: [{
-      value: "A: Âu Lạc",
-      name: "a",
-      isCorrect: true
-    }, {
-      value: "B: Vạn Xuân",
-      name: "b",
-      isCorrect: false
-    }, {
-      value: "C: Đại Cồ Việt",
-      name: "c",
-      isCorrect: false
-    }, {
-      value: "D: Đại Việt",
-      name: "d",
-      isCorrect: false
-    }],
-    score: 200
-  }
-}];
-var _default = data;
-exports.default = _default;
-},{}],"node_modules/@babel/runtime/helpers/classCallCheck.js":[function(require,module,exports) {
+})({"node_modules/@babel/runtime/helpers/classCallCheck.js":[function(require,module,exports) {
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -1059,6 +593,9 @@ var Container = /*#__PURE__*/function () {
   }, {
     key: "init",
     value: function init() {}
+  }, {
+    key: "render",
+    value: function render() {}
   }]);
   return Container;
 }();
@@ -1119,11 +656,9 @@ exports.config = config;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.listquestion = void 0;
+exports.listQuestion = listQuestion;
 
 var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers/toConsumableArray"));
-
-var _data = _interopRequireDefault(require("../api/data"));
 
 var _utils = require("../utils");
 
@@ -1133,28 +668,28 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function levelEasy(data) {
   return data.filter(function (item) {
-    return item.level === "easy";
+    return item.level === 'easy';
   });
 }
 
 function levelNormal(data) {
   return data.filter(function (item) {
-    return item.level === "normal";
+    return item.level === 'normal';
   });
 }
 
 function levelHard(data) {
   return data.filter(function (item) {
-    return item.level === "hard";
+    return item.level === 'hard';
   });
 }
 
-function listQuestion() {
-  var easy = _utils.random.ramdomAllvalue(levelEasy(_data.default));
+function listQuestion(data) {
+  var easy = _utils.random.ramdomAllvalue(levelEasy(data));
 
-  var normal = _utils.random.ramdomAllvalue(levelNormal(_data.default));
+  var normal = _utils.random.ramdomAllvalue(levelNormal(data));
 
-  var hard = _utils.random.ramdomAllvalue(levelHard(_data.default));
+  var hard = _utils.random.ramdomAllvalue(levelHard(data));
 
   return {
     easy: [].concat((0, _toConsumableArray2.default)(easy), (0, _toConsumableArray2.default)(normal)),
@@ -1162,11 +697,7 @@ function listQuestion() {
     hard: (0, _toConsumableArray2.default)(hard)
   };
 }
-
-var questions = _config.config.maximum_question / 3;
-var listquestion = [].concat((0, _toConsumableArray2.default)(listQuestion().easy.slice(0, 6)), (0, _toConsumableArray2.default)(listQuestion().normal.slice(0, 5)), (0, _toConsumableArray2.default)(listQuestion().hard.slice(0, 4)));
-exports.listquestion = listquestion;
-},{"@babel/runtime/helpers/toConsumableArray":"node_modules/@babel/runtime/helpers/toConsumableArray.js","../api/data":"src/api/data.js","../utils":"src/utils/index.js","../api/config":"src/api/config.js"}],"src/utils/index.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/toConsumableArray":"node_modules/@babel/runtime/helpers/toConsumableArray.js","../utils":"src/utils/index.js","../api/config":"src/api/config.js"}],"src/utils/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1202,10 +733,10 @@ Object.defineProperty(exports, "Container", {
     return _Container.default;
   }
 });
-Object.defineProperty(exports, "listquestion", {
+Object.defineProperty(exports, "listQuestion", {
   enumerable: true,
   get: function () {
-    return _randomQuestion.listquestion;
+    return _randomQuestion.listQuestion;
   }
 });
 
@@ -1295,21 +826,26 @@ var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 module.exports = {
-  "container": "_container_a8d46",
-  "form": "_form_a8d46",
-  "title": "_title_a8d46",
-  "name": "_name_a8d46",
-  "inputname": "_inputname_a8d46",
-  "btn": "_btn_a8d46",
-  "textwarning": "_textwarning_a8d46"
+  "container": "_container_64101",
+  "main": "_main_64101",
+  "title": "_title_64101",
+  "name": "_name_64101",
+  "inputname": "_inputname_64101",
+  "btn": "_btn_64101",
+  "textwarning": "_textwarning_64101",
+  "link_contribute_question": "_link_contribute_question_64101",
+  "loading": "_loading_64101"
 };
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/button/button.scss":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/Button/button.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 module.exports = {
-  "btn": "_btn_a4a77"
+  "btn": "_btn_5e418",
+  "btn_primary": "_btn_primary_5e418",
+  "btn_light": "_btn_light_5e418",
+  "btn_dark": "_btn_dark_5e418"
 };
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/HomeScreen/HomeScreen.js":[function(require,module,exports) {
 "use strict";
@@ -1321,35 +857,20 @@ exports.default = void 0;
 
 var _home = _interopRequireDefault(require("./home.scss"));
 
-var _button = _interopRequireDefault(require("../button/button.scss"));
+var _button = _interopRequireDefault(require("../Button/button.scss"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function HomeScreen(props) {
   return (
     /*html*/
-    "\n      <div class=\"".concat(_home.default.container, "\">\n            <form class=\"").concat(_home.default.form, "\">\n                <h1 class=\"").concat(_home.default.title, "\">").concat(props.title, "</h1>\n                <div class=\"").concat(_home.default.name, "\">").concat(props.text, "</div>\n                <input type=\"text\" id=\"").concat(props.inputId, "\" class=\"").concat(_home.default.inputname, "\">\n                <button id=\"").concat(props.buttonStartId, "\" class=\"").concat(_button.default.btn, "\">").concat(props.buttonStartText, "</button>\n            </form>\n      </div>\n      ")
+    "\n      <div class=\"".concat(_home.default.container, "\">\n      ").concat(props.isLoading ? "<div class=\"".concat(_home.default.loading, "\">loading</div>") : '', "\n        <div class=\"").concat(_home.default.main, "\">\n            <h1 class=\"").concat(_home.default.title, "\">").concat(props.title, "</h1>\n            <div class=\"").concat(_home.default.name, "\">").concat(props.text, "</div>\n            <input type=\"text\" id=\"").concat(props.inputId, "\" class=\"").concat(_home.default.inputname, "\">\n            <button id=\"").concat(props.buttonStartId, "\" class=\"").concat(_button.default.btn, " ").concat(_button.default.btn_primary, "\">").concat(props.buttonStartText, "</button>\n            <a id=").concat(props.buttonContribute, " href=\"#\" class=").concat(_home.default.link_contribute_question, ">").concat(props.contributeQuestions, "</a>\n        </div>\n      </div>\n      ")
   );
 }
 
 var _default = HomeScreen;
 exports.default = _default;
-},{"./home.scss":"src/templates/HomeScreen/home.scss","../button/button.scss":"src/templates/button/button.scss"}],"src/api/content.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.textHomeScreen = void 0;
-var textHomeScreen = {
-  title: "Ai Là Triệu Phú",
-  text: "Vui Lòng Nhập Tên Của Bạn",
-  buttonStartText: "Bắt Đầu",
-  inputId: "inputName",
-  buttonStartId: "buttonStartId"
-};
-exports.textHomeScreen = textHomeScreen;
-},{}],"src/store/createUserName.js":[function(require,module,exports) {
+},{"./home.scss":"src/templates/HomeScreen/home.scss","../Button/button.scss":"src/templates/Button/button.scss"}],"src/store/createUserName.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1886,7 +1407,300 @@ function createHelpLooker() {
 var helpLooker = logger(createHelpLooker)();
 var _default = helpLooker;
 exports.default = _default;
-},{"../utils":"src/utils/index.js"}],"src/store/index.js":[function(require,module,exports) {
+},{"../utils":"src/utils/index.js"}],"src/store/createQuestionsDraft.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers/toConsumableArray"));
+
+var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/defineProperty"));
+
+var _utils = require("../utils");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function createQuestionsDraft() {
+  var _createState = (0, _utils.createState)({
+    isDeleteLoading: false,
+    isLoading: false,
+    isAlert: false,
+    data: []
+  }),
+      set = _createState.set,
+      get = _createState.get,
+      update = _createState.update,
+      subscribe = _createState.subscribe;
+
+  var getQuestionsDraftSuccess = function getQuestionsDraftSuccess(data) {
+    return set({
+      isLoading: false,
+      isAlert: false,
+      data: data
+    });
+  };
+
+  var addQuestionDraftRequest = function addQuestionDraftRequest() {
+    return update(function (listQuestion) {
+      return _objectSpread(_objectSpread({}, listQuestion), {}, {
+        isLoading: true
+      });
+    });
+  };
+
+  var addQuestionDraftSuccess = function addQuestionDraftSuccess(result) {
+    return update(function (listQuestion) {
+      return {
+        isLoading: false,
+        isAlert: true,
+        data: [].concat((0, _toConsumableArray2.default)(listQuestion.data), [result])
+      };
+    });
+  };
+
+  var resetAlert = function resetAlert() {
+    return update(function (listQuestion) {
+      return _objectSpread(_objectSpread({}, listQuestion), {}, {
+        isAlert: false
+      });
+    });
+  };
+
+  var deleteQuestionDraftRequest = function deleteQuestionDraftRequest() {
+    return update(function (listQuestion) {
+      return _objectSpread(_objectSpread({}, listQuestion), {}, {
+        isDeleteLoading: true
+      });
+    });
+  };
+
+  var deleteQuestionDraftSuccess = function deleteQuestionDraftSuccess(id) {
+    return update(function (listQuestion) {
+      return _objectSpread(_objectSpread({}, listQuestion), {}, {
+        data: listQuestion.data.filter(function (item) {
+          return item.id !== id;
+        }),
+        isDeleteLoading: false
+      });
+    });
+  };
+
+  return {
+    set: set,
+    get: get,
+    subscribe: subscribe,
+    addQuestionDraftSuccess: addQuestionDraftSuccess,
+    addQuestionDraftRequest: addQuestionDraftRequest,
+    getQuestionsDraftSuccess: getQuestionsDraftSuccess,
+    resetAlert: resetAlert,
+    deleteQuestionDraftSuccess: deleteQuestionDraftSuccess,
+    deleteQuestionDraftRequest: deleteQuestionDraftRequest
+  };
+}
+
+var questionDraft = (0, _utils.logger)(createQuestionsDraft)();
+var _default = questionDraft;
+exports.default = _default;
+},{"@babel/runtime/helpers/toConsumableArray":"node_modules/@babel/runtime/helpers/toConsumableArray.js","@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","../utils":"src/utils/index.js"}],"src/store/createQuestions.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers/toConsumableArray"));
+
+var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/defineProperty"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+var _require = require('../utils'),
+    createState = _require.createState,
+    logger = _require.logger;
+
+function createQuestions() {
+  var _createState = createState({
+    isAddLoading: false,
+    isLoading: false,
+    isEditLoading: false,
+    data: []
+  }),
+      get = _createState.get,
+      set = _createState.set,
+      subscribe = _createState.subscribe,
+      update = _createState.update;
+
+  var getQuestionsRequest = function getQuestionsRequest() {
+    return update(function (prevState) {
+      return _objectSpread(_objectSpread({}, prevState), {}, {
+        isLoading: true
+      });
+    });
+  };
+
+  var getQuestionsSuccess = function getQuestionsSuccess(data) {
+    return update(function (prevState) {
+      return _objectSpread(_objectSpread({}, prevState), {}, {
+        isLoading: false,
+        data: data
+      });
+    });
+  };
+
+  var addQuestionRequest = function addQuestionRequest() {
+    return update(function (prevState) {
+      return _objectSpread(_objectSpread({}, prevState), {}, {
+        isAddLoading: true
+      });
+    });
+  };
+
+  var addQuestionSuccess = function addQuestionSuccess(question) {
+    console.log(question);
+    return update(function (prevState) {
+      return _objectSpread(_objectSpread({}, prevState), {}, {
+        isAddLoading: false,
+        data: [].concat((0, _toConsumableArray2.default)(prevState.data), [question])
+      });
+    });
+  };
+
+  var editQuestionRequest = function editQuestionRequest() {
+    return update(function (prevState) {
+      return _objectSpread(_objectSpread({}, prevState), {}, {
+        isEditLoading: true
+      });
+    });
+  };
+
+  var editQuestionSuccess = function editQuestionSuccess(id, newQuestion) {
+    return update(function (prevState) {
+      return _objectSpread(_objectSpread({}, prevState), {}, {
+        isEditLoading: false,
+        data: prevState.data.map(function (item) {
+          if (item.id === id) {
+            return {
+              newQuestion: newQuestion,
+              id: item.id
+            };
+          }
+
+          return item;
+        })
+      });
+    });
+  };
+
+  return {
+    set: set,
+    get: get,
+    subscribe: subscribe,
+    getQuestionsRequest: getQuestionsRequest,
+    getQuestionsSuccess: getQuestionsSuccess,
+    addQuestionRequest: addQuestionRequest,
+    addQuestionSuccess: addQuestionSuccess,
+    editQuestionRequest: editQuestionRequest,
+    editQuestionSuccess: editQuestionSuccess
+  };
+}
+
+var questions = logger(createQuestions)();
+var _default = questions;
+exports.default = _default;
+},{"@babel/runtime/helpers/toConsumableArray":"node_modules/@babel/runtime/helpers/toConsumableArray.js","@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","../utils":"src/utils/index.js"}],"src/store/createSecret.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _require = require('../utils'),
+    createState = _require.createState,
+    logger = _require.logger;
+
+function createSecret() {
+  var _createState = createState('', {
+    stateName: 'secret',
+    isLocalStorage: true
+  }),
+      set = _createState.set,
+      get = _createState.get,
+      subscribe = _createState.subscribe,
+      update = _createState.update;
+
+  var setSecret = function setSecret(password) {
+    return update(function () {
+      return password;
+    });
+  };
+
+  var resetSecret = function resetSecret() {
+    return set('');
+  };
+
+  return {
+    set: set,
+    get: get,
+    subscribe: subscribe,
+    setSecret: setSecret,
+    resetSecret: resetSecret
+  };
+}
+
+var secret = logger(createSecret)();
+var _default = secret;
+exports.default = _default;
+},{"../utils":"src/utils/index.js"}],"src/store/createListQuestionToPlayGame.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers/toConsumableArray"));
+
+var _utils = require("../utils");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function createListQuestionToPlayGame() {
+  var _createState = (0, _utils.createState)([]),
+      set = _createState.set,
+      get = _createState.get,
+      subscribe = _createState.subscribe,
+      update = _createState.update;
+
+  var setListQuestionsToplayGame = function setListQuestionsToplayGame(data) {
+    var listQuestions = [].concat((0, _toConsumableArray2.default)((0, _utils.listQuestion)(data).easy.slice(0, 6)), (0, _toConsumableArray2.default)((0, _utils.listQuestion)(data).normal.slice(0, 5)), (0, _toConsumableArray2.default)((0, _utils.listQuestion)(data).hard.slice(0, 4)));
+    return set(listQuestions);
+  };
+
+  return {
+    set: set,
+    get: get,
+    subscribe: subscribe,
+    setListQuestionsToplayGame: setListQuestionsToplayGame
+  };
+}
+
+var listQuestionToPlayGame = (0, _utils.logger)(createListQuestionToPlayGame)();
+var _default = listQuestionToPlayGame;
+exports.default = _default;
+},{"@babel/runtime/helpers/toConsumableArray":"node_modules/@babel/runtime/helpers/toConsumableArray.js","../utils":"src/utils/index.js"}],"src/store/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1958,6 +1772,30 @@ Object.defineProperty(exports, "helpLooker", {
     return _createHelpLooker.default;
   }
 });
+Object.defineProperty(exports, "questionDraft", {
+  enumerable: true,
+  get: function () {
+    return _createQuestionsDraft.default;
+  }
+});
+Object.defineProperty(exports, "questions", {
+  enumerable: true,
+  get: function () {
+    return _createQuestions.default;
+  }
+});
+Object.defineProperty(exports, "secret", {
+  enumerable: true,
+  get: function () {
+    return _createSecret.default;
+  }
+});
+Object.defineProperty(exports, "listQuestionToPlayGame", {
+  enumerable: true,
+  get: function () {
+    return _createListQuestionToPlayGame.default;
+  }
+});
 
 var _createUserName = _interopRequireDefault(require("./createUserName"));
 
@@ -1981,8 +1819,16 @@ var _createCountDown = _interopRequireDefault(require("./createCountDown"));
 
 var _createHelpLooker = _interopRequireDefault(require("./createHelpLooker"));
 
+var _createQuestionsDraft = _interopRequireDefault(require("./createQuestionsDraft"));
+
+var _createQuestions = _interopRequireDefault(require("./createQuestions"));
+
+var _createSecret = _interopRequireDefault(require("./createSecret"));
+
+var _createListQuestionToPlayGame = _interopRequireDefault(require("./createListQuestionToPlayGame"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./createUserName":"src/store/createUserName.js","./createCurrentIndex":"src/store/createCurrentIndex.js","./createAnswerSelected":"src/store/createAnswerSelected.js","./createAnswerDescisionSelected":"src/store/createAnswerDescisionSelected.js","./createTotalScore":"src/store/createTotalScore.js","./createIsVisibleModal":"src/store/createIsVisibleModal.js","./createIsCorrect":"src/store/createIsCorrect.js","./createHelp5050":"src/store/createHelp5050.js","./createHelpCall":"src/store/createHelpCall.js","./createCountDown":"src/store/createCountDown.js","./createHelpLooker":"src/store/createHelpLooker.js"}],"src/utils/createHistory.js":[function(require,module,exports) {
+},{"./createUserName":"src/store/createUserName.js","./createCurrentIndex":"src/store/createCurrentIndex.js","./createAnswerSelected":"src/store/createAnswerSelected.js","./createAnswerDescisionSelected":"src/store/createAnswerDescisionSelected.js","./createTotalScore":"src/store/createTotalScore.js","./createIsVisibleModal":"src/store/createIsVisibleModal.js","./createIsCorrect":"src/store/createIsCorrect.js","./createHelp5050":"src/store/createHelp5050.js","./createHelpCall":"src/store/createHelpCall.js","./createCountDown":"src/store/createCountDown.js","./createHelpLooker":"src/store/createHelpLooker.js","./createQuestionsDraft":"src/store/createQuestionsDraft.js","./createQuestions":"src/store/createQuestions.js","./createSecret":"src/store/createSecret.js","./createListQuestionToPlayGame":"src/store/createListQuestionToPlayGame.js"}],"src/utils/createHistory.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1997,7 +1843,7 @@ function createHistory() {
   function callListeners(url, data, title) {
     window.history.pushState(data, title, url);
     info = {
-      url: url,
+      url: url.replace(/^\//g, ''),
       data: data,
       title: title
     };
@@ -2015,12 +1861,12 @@ function createHistory() {
   return {
     to: function to(url) {
       var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-      var title = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "";
+      var title = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
       callListeners(url, data, title);
     },
     redirect: function redirect(url) {
       var data = {};
-      var title = "";
+      var title = '';
       callListeners(url, data, title);
     },
     get: function get() {
@@ -2028,9 +1874,9 @@ function createHistory() {
     },
     subscribe: function subscribe(listener) {
       info = {
-        url: document.location.pathname.replace(/^\//g, ""),
+        url: document.location.pathname.replace(/^\//g, ''),
         data: {},
-        title: ""
+        title: ''
       };
       listeners.push(listener);
     }
@@ -2054,7 +1900,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var route = (0, _createHistory.default)();
 var _default = route;
 exports.default = _default;
-},{"./utils/createHistory":"src/utils/createHistory.js"}],"src/core/StartGamePage/StartGamePage.js":[function(require,module,exports) {
+},{"./utils/createHistory":"src/utils/createHistory.js"}],"src/containers/StartGamePage/ButtonStartGameContainer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2066,43 +1912,35 @@ var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/cl
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
-var _HomeScreen = _interopRequireDefault(require("../../templates/HomeScreen/HomeScreen"));
-
-var _content = require("../../api/content");
-
 var _store = require("../../store");
 
 var _route = _interopRequireDefault(require("../../route"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var StartGamePage = /*#__PURE__*/function () {
-  function StartGamePage() {
-    (0, _classCallCheck2.default)(this, StartGamePage);
-    this._handleStartGame = this._handleStartGame.bind(this);
+var ButtonStartGameContainer = /*#__PURE__*/function () {
+  function ButtonStartGameContainer() {
+    (0, _classCallCheck2.default)(this, ButtonStartGameContainer);
   }
 
-  (0, _createClass2.default)(StartGamePage, [{
+  (0, _createClass2.default)(ButtonStartGameContainer, [{
     key: "render",
-    value: function render() {
-      // Hiển thị màn hình chính
-      return (0, _HomeScreen.default)(_content.textHomeScreen);
-    }
+    value: function render() {}
   }, {
     key: "_handleStartGame",
     value: function _handleStartGame(event) {
       event.preventDefault();
-      var inputName = document.getElementById("inputName"); // const textWarning = document.querySelector("#text-warning");
+      var inputName = document.getElementById('inputName'); // const textWarning = document.querySelector("#text-warning");
 
       var value = inputName.value; // set isStart = true khi bắt đầu game và lấy tên người chơi nhập vào
 
-      if (value == "") {
-        return alert("Ban can nhap ten");
+      if (value == '') {
+        return alert('Ban can nhap ten');
       }
 
       _store.userName.select(function (userNameState) {
         if (userNameState) {
-          _route.default.to("play_game");
+          _route.default.to('/play_game');
         }
       });
 
@@ -2111,28 +1949,310 @@ var StartGamePage = /*#__PURE__*/function () {
   }, {
     key: "handleDOM",
     value: function handleDOM() {
-      var buttonStartGame = document.getElementById("buttonStartId");
+      var buttonStartGame = document.getElementById('buttonStartId');
 
       if (buttonStartGame) {
-        buttonStartGame.addEventListener("click", this._handleStartGame);
+        buttonStartGame.addEventListener('click', this._handleStartGame);
       }
     }
   }]);
-  return StartGamePage;
+  return ButtonStartGameContainer;
 }();
 
+exports.default = ButtonStartGameContainer;
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../store":"src/store/index.js","../../route":"src/route.js"}],"src/containers/StartGamePage/ButtonContributeQuestionContainer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
+
+var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+
+var _route = _interopRequireDefault(require("../../route"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ButtonContributeQuestion = /*#__PURE__*/function () {
+  function ButtonContributeQuestion() {
+    (0, _classCallCheck2.default)(this, ButtonContributeQuestion);
+  }
+
+  (0, _createClass2.default)(ButtonContributeQuestion, [{
+    key: "render",
+    value: function render() {}
+  }, {
+    key: "_handleContributeQuestion",
+    value: function _handleContributeQuestion(event) {
+      event.preventDefault();
+
+      _route.default.to('/add_question');
+    }
+  }, {
+    key: "handleDOM",
+    value: function handleDOM() {
+      var buttonContributeEL = document.getElementById('buttonContribute');
+
+      if (buttonContributeEL) {
+        buttonContributeEL.addEventListener('click', this._handleContributeQuestion);
+      }
+    }
+  }]);
+  return ButtonContributeQuestion;
+}();
+
+exports.default = ButtonContributeQuestion;
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../route":"src/route.js"}],"src/api/fetchQuestionsDraft.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.putQuestionDraft = exports.deleteQuestionDraft = exports.postQuestionDraft = exports.getQuestionDrafts = void 0;
+var API = 'https://5f0ebab0faef3500160b88d8.mockapi.io/api/v1/question-draft';
+
+var getQuestionDrafts = function getQuestionDrafts() {
+  return fetch(API).then(function (res) {
+    return res.json();
+  });
+};
+
+exports.getQuestionDrafts = getQuestionDrafts;
+
+var postQuestionDraft = function postQuestionDraft(data) {
+  return fetch(API, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  }).then(function (res) {
+    return res.json();
+  });
+};
+
+exports.postQuestionDraft = postQuestionDraft;
+
+var deleteQuestionDraft = function deleteQuestionDraft(id) {
+  return fetch("".concat(API, "/").concat(id), {
+    method: 'DELETE'
+  }).then(function (res) {
+    return res.json();
+  });
+};
+
+exports.deleteQuestionDraft = deleteQuestionDraft;
+
+var putQuestionDraft = function putQuestionDraft(id, data) {
+  return fetch("".concat(API, "/").concat(id), {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  }).then(function (res) {
+    return res.json();
+  });
+};
+
+exports.putQuestionDraft = putQuestionDraft;
+},{}],"src/utils/fetchAPI.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = fetchAPI;
+
+var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/defineProperty"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function fetchAPI(configure) {
+  var _configure = _objectSpread(_objectSpread({
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }, configure), {}, {
+    body: JSON.stringify(configure.body)
+  });
+
+  var baseURL = 'https://5f0ebab0faef3500160b88d8.mockapi.io/api/v1/';
+  return fetch(baseURL + configure.url, _configure).then(function (res) {
+    if (res.status === 200 && _configure.method === 'GET') {
+      return res.json();
+    } else if (res.status === 201 && _configure.method === 'POST') {
+      return res.json();
+    } else {
+      throw new Error('error');
+    }
+  });
+}
+},{"@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js"}],"src/api/fetchQuestions.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.putQuestion = exports.deleteQuestion = exports.postQuestion = exports.getQuestions = void 0;
+
+var _fetchAPI = _interopRequireDefault(require("../utils/fetchAPI"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ENDPOINT = 'questions';
+
+var getQuestions = function getQuestions() {
+  return (0, _fetchAPI.default)({
+    url: ENDPOINT
+  });
+};
+
+exports.getQuestions = getQuestions;
+
+var postQuestion = function postQuestion(data) {
+  return (0, _fetchAPI.default)({
+    method: 'POST',
+    url: ENDPOINT,
+    body: data
+  });
+};
+
+exports.postQuestion = postQuestion;
+
+var deleteQuestion = function deleteQuestion(id) {
+  return (0, _fetchAPI.default)({
+    method: 'DELETE',
+    url: "".concat(ENDPOINT, "/").concat(id)
+  });
+};
+
+exports.deleteQuestion = deleteQuestion;
+
+var putQuestion = function putQuestion(id, data) {
+  return (0, _fetchAPI.default)({
+    method: 'PUT',
+    body: data
+  });
+};
+
+exports.putQuestion = putQuestion;
+},{"../utils/fetchAPI":"src/utils/fetchAPI.js"}],"src/containers/StartGamePage/StartGamePage.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
+
+var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+
+var _inherits2 = _interopRequireDefault(require("@babel/runtime/helpers/inherits"));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(require("@babel/runtime/helpers/possibleConstructorReturn"));
+
+var _getPrototypeOf2 = _interopRequireDefault(require("@babel/runtime/helpers/getPrototypeOf"));
+
+var _HomeScreen = _interopRequireDefault(require("../../templates/HomeScreen/HomeScreen"));
+
+var _ButtonStartGameContainer = _interopRequireDefault(require("./ButtonStartGameContainer"));
+
+var _ButtonContributeQuestionContainer = _interopRequireDefault(require("./ButtonContributeQuestionContainer"));
+
+var _store = require("../../store");
+
+var _utils = require("../../utils");
+
+var _fetchQuestionsDraft = require("../../api/fetchQuestionsDraft");
+
+var _fetchQuestions = require("../../api/fetchQuestions");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+var StartGamePage = /*#__PURE__*/function (_Container) {
+  (0, _inherits2.default)(StartGamePage, _Container);
+
+  var _super = _createSuper(StartGamePage);
+
+  function StartGamePage() {
+    var _this;
+
+    (0, _classCallCheck2.default)(this, StartGamePage);
+    _this = _super.call(this);
+    _this.buttonStartGameContainer = new _ButtonStartGameContainer.default();
+    _this.buttonContributeQuestion = new _ButtonContributeQuestionContainer.default();
+    return _this;
+  } // getData
+
+
+  (0, _createClass2.default)(StartGamePage, [{
+    key: "start",
+    value: function start() {
+      (0, _fetchQuestionsDraft.getQuestionDrafts)().then(function (data) {
+        _store.questionDraft.getQuestionsDraftSuccess(data);
+      });
+
+      _store.questions.getQuestionsRequest();
+
+      (0, _fetchQuestions.getQuestions)().then(function (data) {
+        _store.questions.getQuestionsSuccess(data);
+
+        _store.listQuestionToPlayGame.setListQuestionsToplayGame(data);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      // Hiển thị màn hình chính
+      var questionsState = _store.questions.get();
+
+      return (0, _HomeScreen.default)({
+        title: 'Ai Là Triệu Phú',
+        text: 'Vui Lòng Nhập Tên Của Bạn',
+        buttonStartText: 'Bắt Đầu',
+        contributeQuestions: 'Đóng góp thêm câu hỏi cho chúng tôi',
+        inputId: 'inputName',
+        buttonStartId: 'buttonStartId',
+        buttonContribute: 'buttonContribute',
+        isLoading: questionsState.isLoading
+      });
+    }
+  }, {
+    key: "handleDOM",
+    value: function handleDOM() {
+      this.buttonStartGameContainer.handleDOM();
+      this.buttonContributeQuestion.handleDOM();
+    }
+  }]);
+  return StartGamePage;
+}(_utils.Container);
+
 exports.default = StartGamePage;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/HomeScreen/HomeScreen":"src/templates/HomeScreen/HomeScreen.js","../../api/content":"src/api/content.js","../../store":"src/store/index.js","../../route":"src/route.js"}],"src/templates/Help/help.scss":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","../../templates/HomeScreen/HomeScreen":"src/templates/HomeScreen/HomeScreen.js","./ButtonStartGameContainer":"src/containers/StartGamePage/ButtonStartGameContainer.js","./ButtonContributeQuestionContainer":"src/containers/StartGamePage/ButtonContributeQuestionContainer.js","../../store":"src/store/index.js","../../utils":"src/utils/index.js","../../api/fetchQuestionsDraft":"src/api/fetchQuestionsDraft.js","../../api/fetchQuestions":"src/api/fetchQuestions.js"}],"src/templates/Help/help.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 module.exports = {
-  "btn": "_btn_f131b",
-  "inner": "_inner_f131b",
-  "help5050used": "_help5050used_f131b",
-  "helpcallused": "_helpcallused_f131b",
-  "helplookerused": "_helplookerused_f131b"
+  "btn": "_btn_2dd08",
+  "inner": "_inner_2dd08",
+  "help5050used": "_help5050used_2dd08",
+  "helpcallused": "_helpcallused_2dd08",
+  "helplookerused": "_helplookerused_2dd08"
 };
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/Help/Help.js":[function(require,module,exports) {
 "use strict";
@@ -2201,25 +2321,25 @@ var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 module.exports = {
-  "main": "_main_d16e4",
-  "col8": "_col8_d16e4",
-  "col4": "_col4_d16e4",
-  "game": "_game_d16e4",
-  "question": "_question_d16e4",
-  "questionnumber": "_questionnumber_d16e4",
-  "listanswer": "_listanswer_d16e4",
-  "name": "_name_d16e4",
-  "showhelp": "_showhelp_d16e4",
-  "board": "_board_d16e4",
-  "boardbelow": "_boardbelow_d16e4",
-  "btn": "_btn_d16e4",
-  "score": "_score_d16e4",
-  "scorequestion": "_scorequestion_d16e4",
-  "btnstop": "_btnstop_d16e4",
-  "countdown": "_countdown_d16e4",
-  "modal": "_modal_d16e4",
-  "help": "_help_d16e4",
-  "helptext": "_helptext_d16e4"
+  "main": "_main_93942",
+  "col8": "_col8_93942",
+  "col4": "_col4_93942",
+  "game": "_game_93942",
+  "question": "_question_93942",
+  "questionnumber": "_questionnumber_93942",
+  "listanswer": "_listanswer_93942",
+  "name": "_name_93942",
+  "showhelp": "_showhelp_93942",
+  "board": "_board_93942",
+  "boardbelow": "_boardbelow_93942",
+  "btn": "_btn_93942",
+  "score": "_score_93942",
+  "scorequestion": "_scorequestion_93942",
+  "btnstop": "_btnstop_93942",
+  "countdown": "_countdown_93942",
+  "modal": "_modal_93942",
+  "help": "_help_93942",
+  "helptext": "_helptext_93942"
 };
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/MainScreen/MainScreen.js":[function(require,module,exports) {
 "use strict";
@@ -2295,9 +2415,9 @@ var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 module.exports = {
-  "answer": "_answer_6c073",
-  "item": "_item_6c073",
-  "input": "_input_6c073"
+  "answer": "_answer_e1e54",
+  "item": "_item_e1e54",
+  "input": "_input_e1e54"
 };
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/Answer/Answer.js":[function(require,module,exports) {
 "use strict";
@@ -2331,7 +2451,7 @@ function Answer(_ref) {
 
 var _default = Answer;
 exports.default = _default;
-},{"./answer.scss":"src/templates/Answer/answer.scss"}],"src/core/PlayGamePage/ShowAnswerContainer.js":[function(require,module,exports) {
+},{"./answer.scss":"src/templates/Answer/answer.scss"}],"src/containers/PlayGamePage/ShowAnswerContainer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2366,7 +2486,7 @@ var ShowAnswerContainer = /*#__PURE__*/function () {
   }, {
     key: "handleInputEl",
     value: function handleInputEl(event) {
-      var answerName = event.currentTarget.getAttribute("data-answer-name");
+      var answerName = event.currentTarget.getAttribute('data-answer-name');
 
       _store.answerSelect.setNameAnswer(answerName);
     }
@@ -2375,9 +2495,9 @@ var ShowAnswerContainer = /*#__PURE__*/function () {
     value: function handleDOM() {
       var _this = this;
 
-      var answerInputEls = document.querySelectorAll(".answerInput");
+      var answerInputEls = document.querySelectorAll('.answerInput');
       answerInputEls.forEach(function (answerInputEl) {
-        answerInputEl.addEventListener("click", _this.handleInputEl);
+        answerInputEl.addEventListener('click', _this.handleInputEl);
       });
     }
   }]);
@@ -2385,7 +2505,7 @@ var ShowAnswerContainer = /*#__PURE__*/function () {
 }();
 
 exports.default = ShowAnswerContainer;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/Answer/Answer":"src/templates/Answer/Answer.js","../../store":"src/store/index.js"}],"src/templates/button/ButtonChooseAnswer.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/Answer/Answer":"src/templates/Answer/Answer.js","../../store":"src/store/index.js"}],"src/templates/Button/ButtonChooseAnswer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2393,20 +2513,20 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _button = _interopRequireDefault(require("../button/button.scss"));
+var _button = _interopRequireDefault(require("./button.scss"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function ButtonChooseAnswer() {
   return (
     /*html*/
-    "\n    <button class=\"".concat(_button.default.btn, "\" id=\"choose-answer\">Cho\u0323n</button>\n  ")
+    "\n    <button class=\"".concat(_button.default.btn, " ").concat(_button.default.btn_dark, "\" id=\"choose-answer\">Cho\u0323n</button>\n  ")
   );
 }
 
 var _default = ButtonChooseAnswer;
 exports.default = _default;
-},{"../button/button.scss":"src/templates/button/button.scss"}],"node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js":[function(require,module,exports) {
+},{"./button.scss":"src/templates/Button/button.scss"}],"node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js":[function(require,module,exports) {
 function _objectWithoutPropertiesLoose(source, excluded) {
   if (source == null) return {};
   var target = {};
@@ -2452,18 +2572,20 @@ module.exports = _objectWithoutProperties;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ROOT = void 0;
-var ROOT = document.getElementById("root");
+exports.SECRET = exports.ROOT = void 0;
+var ROOT = document.getElementById('root');
 exports.ROOT = ROOT;
+var SECRET = "khongbiet";
+exports.SECRET = SECRET;
 },{}],"src/templates/ModalBase/styles.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 module.exports = {
-  "container": "_container_1f489",
-  "content": "_content_1f489",
-  "overlay": "_overlay_1f489"
+  "container": "_container_e705e",
+  "content": "_content_e705e",
+  "overlay": "_overlay_e705e"
 };
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/ModalBase/ModalBase.js":[function(require,module,exports) {
 "use strict";
@@ -2516,12 +2638,12 @@ var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 module.exports = {
-  "modal": "_modal_3eeec",
-  "animatetop": "_animatetop_3eeec",
-  "header": "_header_3eeec",
-  "content": "_content_3eeec",
-  "close": "_close_3eeec",
-  "title": "_title_3eeec"
+  "modal": "_modal_5a57b",
+  "animatetop": "_animatetop_5a57b",
+  "header": "_header_5a57b",
+  "content": "_content_5a57b",
+  "close": "_close_5a57b",
+  "title": "_title_5a57b"
 };
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/Modal/Modal.js":[function(require,module,exports) {
 "use strict";
@@ -2613,9 +2735,9 @@ var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 module.exports = {
-  "content": "_content_8a959",
-  "modal": "_modal_8a959",
-  "animatetop": "_animatetop_8a959"
+  "content": "_content_c56d8",
+  "modal": "_modal_c56d8",
+  "animatetop": "_animatetop_c56d8"
 };
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/ModalChoseAnswer/ModalChoseAnswer.js":[function(require,module,exports) {
 "use strict";
@@ -2644,7 +2766,7 @@ function ModalChoseAnswer(_ref) {
 
 var _default = ModalChoseAnswer;
 exports.default = _default;
-},{"@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","../Modal/Modal":"src/templates/Modal/Modal.js","./style.scss":"src/templates/ModalChoseAnswer/style.scss"}],"src/core/PlayGamePage/ButtonNextQuestionContainer.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","../Modal/Modal":"src/templates/Modal/Modal.js","./style.scss":"src/templates/ModalChoseAnswer/style.scss"}],"src/containers/PlayGamePage/ButtonNextQuestionContainer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2656,7 +2778,7 @@ var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/cl
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
-var _ButtonChooseAnswer = _interopRequireDefault(require("../../templates/button/ButtonChooseAnswer"));
+var _ButtonChooseAnswer = _interopRequireDefault(require("../../templates/Button/ButtonChooseAnswer"));
 
 var _store = require("../../store");
 
@@ -2688,7 +2810,7 @@ var ButtonNextQuestionContainer = /*#__PURE__*/function () {
 
       var visibleModalState = _store.isVisibleModal.get();
 
-      if (_store.answerSelect.get() === "default") {
+      if (_store.answerSelect.get() === 'default') {
         _store.isVisibleModal.setVisibleModal(false);
 
         return;
@@ -2706,30 +2828,28 @@ var ButtonNextQuestionContainer = /*#__PURE__*/function () {
     value: function getMainState() {
       var currentIndexState = _store.currentIndex.get();
 
-      var mainState = _utils.listquestion[currentIndexState];
-      return mainState;
-    }
-  }, {
-    key: "getQuizze",
-    value: function getQuizze() {
-      var _this$getMainState = this.getMainState(),
-          quizze = _this$getMainState.quizze;
+      var questionsState = _store.questions.get();
 
-      return quizze;
+      var listQuestionToPlayGameState = _store.listQuestionToPlayGame.get();
+
+      var mainState = listQuestionToPlayGameState[currentIndexState];
+      return mainState;
     } // xử lí khi bấm Ok quyết định chọn đáp án
 
   }, {
     key: "handleModalChooseAnswerOk",
     value: function handleModalChooseAnswerOk(onclose) {
-      var _this$getQuizze = this.getQuizze(),
-          answers = _this$getQuizze.answers,
-          score = _this$getQuizze.score;
+      var _this$getMainState = this.getMainState(),
+          answers = _this$getMainState.answers,
+          score = _this$getMainState.score;
 
       var answerSelectState = _store.answerSelect.get();
 
       var helper5050State = _store.help5050.get();
 
-      console.log(status);
+      var questionsState = _store.questions.get();
+
+      var listQuestionToPlayGameState = _store.listQuestionToPlayGame.get();
 
       _store.isCorrect.setIsCorrect(answers, answerSelectState);
 
@@ -2739,21 +2859,21 @@ var ButtonNextQuestionContainer = /*#__PURE__*/function () {
         _store.totalScore.setTotalScore(score);
 
         _store.currentIndex.select(function (currentIndexState) {
-          if (currentIndexState === _utils.listquestion.length) {
+          if (currentIndexState === listQuestionToPlayGameState.length) {
             _store.currentIndex.resetCurrentIndex();
 
-            _route.default.to("win_game");
+            _route.default.to('/win_game');
           }
         });
 
-        _store.answerSelect.setNameAnswer("default");
+        _store.answerSelect.setNameAnswer('default');
 
         _store.currentIndex.setCurrentIndex(); // Tăng Index;
 
       } else {
         _store.currentIndex.resetCurrentIndex();
 
-        _route.default.to("lose_game");
+        _route.default.to('/lose_game');
       }
 
       if (_store.helpCall.get().used) {
@@ -2782,15 +2902,15 @@ var ButtonNextQuestionContainer = /*#__PURE__*/function () {
   }, {
     key: "handleDOM",
     value: function handleDOM() {
-      var buttonChosseAnswerEl = document.getElementById("choose-answer");
-      buttonChosseAnswerEl && buttonChosseAnswerEl.addEventListener("click", this.handleOpenModalChooseAnswer);
+      var buttonChosseAnswerEl = document.getElementById('choose-answer');
+      buttonChosseAnswerEl && buttonChosseAnswerEl.addEventListener('click', this.handleOpenModalChooseAnswer);
     }
   }]);
   return ButtonNextQuestionContainer;
 }();
 
 exports.default = ButtonNextQuestionContainer;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/button/ButtonChooseAnswer":"src/templates/button/ButtonChooseAnswer.js","../../store":"src/store/index.js","../../templates/ModalChoseAnswer/ModalChoseAnswer":"src/templates/ModalChoseAnswer/ModalChoseAnswer.js","../../utils":"src/utils/index.js","../../route":"src/route.js"}],"src/templates/EndGameScreen/EndGameScreen.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/Button/ButtonChooseAnswer":"src/templates/Button/ButtonChooseAnswer.js","../../store":"src/store/index.js","../../templates/ModalChoseAnswer/ModalChoseAnswer":"src/templates/ModalChoseAnswer/ModalChoseAnswer.js","../../utils":"src/utils/index.js","../../route":"src/route.js"}],"src/templates/EndGameScreen/EndGameScreen.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2818,7 +2938,7 @@ function EndGame(_ref) {
 
 var _default = EndGame;
 exports.default = _default;
-},{"../HomeScreen/home.scss":"src/templates/HomeScreen/home.scss"}],"src/core/PlayGamePage/ButtonStopTheGameContainer.js":[function(require,module,exports) {
+},{"../HomeScreen/home.scss":"src/templates/HomeScreen/home.scss"}],"src/containers/PlayGamePage/ButtonStopTheGameContainer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2850,20 +2970,20 @@ var ButtonStopTheGameContainer = /*#__PURE__*/function () {
   }, {
     key: "handleStopTheGame",
     value: function handleStopTheGame() {
-      _route.default.to("lose_game");
+      _route.default.to('/lose_game');
     }
   }, {
     key: "handleDOM",
     value: function handleDOM() {
-      var stopGameEl = document.getElementById("btnstop");
-      stopGameEl && stopGameEl.addEventListener("click", this.handleStopTheGame);
+      var stopGameEl = document.getElementById('btnstop');
+      stopGameEl && stopGameEl.addEventListener('click', this.handleStopTheGame);
     }
   }]);
   return ButtonStopTheGameContainer;
 }();
 
 exports.default = ButtonStopTheGameContainer;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../route":"src/route.js","../../store":"src/store/index.js","../../templates/EndGameScreen/EndGameScreen":"src/templates/EndGameScreen/EndGameScreen.js"}],"src/core/PlayGamePage/ButtonHelpCallContainer.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../route":"src/route.js","../../store":"src/store/index.js","../../templates/EndGameScreen/EndGameScreen":"src/templates/EndGameScreen/EndGameScreen.js"}],"src/containers/PlayGamePage/ButtonHelpCallContainer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2895,22 +3015,18 @@ var ButtonHelpCallContainer = /*#__PURE__*/function () {
     value: function getMainState() {
       var currentIndexState = _store.currentIndex.get();
 
-      var mainState = _utils.listquestion[currentIndexState];
-      return mainState;
-    }
-  }, {
-    key: "getQuizze",
-    value: function getQuizze() {
-      var _this$getMainState = this.getMainState(),
-          quizze = _this$getMainState.quizze;
+      var questionsState = _store.questions.get();
 
-      return quizze;
+      var listQuestionToPlayGameState = _store.listQuestionToPlayGame.get();
+
+      var mainState = listQuestionToPlayGameState[currentIndexState];
+      return mainState;
     }
   }, {
     key: "handleHelpCall",
     value: function handleHelpCall() {
-      var _this$getQuizze = this.getQuizze(),
-          answers = _this$getQuizze.answers;
+      var _this$getMainState = this.getMainState(),
+          answers = _this$getMainState.answers;
 
       var helpCallState = _store.helpCall.get();
 
@@ -2921,10 +3037,10 @@ var ButtonHelpCallContainer = /*#__PURE__*/function () {
   }, {
     key: "handleDOM",
     value: function handleDOM() {
-      var helpCallEL = document.getElementById("helpcall");
+      var helpCallEL = document.getElementById('helpcall');
 
       if (helpCallEL) {
-        helpCallEL.addEventListener("click", this.handleHelpCall);
+        helpCallEL.addEventListener('click', this.handleHelpCall);
       }
     }
   }]);
@@ -2932,7 +3048,7 @@ var ButtonHelpCallContainer = /*#__PURE__*/function () {
 }();
 
 exports.default = ButtonHelpCallContainer;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../store":"src/store/index.js","../../utils":"src/utils/index.js"}],"src/core/PlayGamePage/CountDownContainer.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../store":"src/store/index.js","../../utils":"src/utils/index.js"}],"src/containers/PlayGamePage/CountDownContainer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2976,7 +3092,7 @@ var CountDownContainer = /*#__PURE__*/function () {
 }();
 
 exports.default = CountDownContainer;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../utils":"src/utils/index.js","../../store":"src/store/index.js"}],"src/core/PlayGamePage/ButtonHelp5050Container.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../utils":"src/utils/index.js","../../store":"src/store/index.js"}],"src/containers/PlayGamePage/ButtonHelp5050Container.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3008,16 +3124,12 @@ var ButtonHelp5050Container = /*#__PURE__*/function () {
     value: function getMainState() {
       var currentIndexState = _store.currentIndex.get();
 
-      var mainState = _utils.listquestion[currentIndexState];
-      return mainState;
-    }
-  }, {
-    key: "getQuizze",
-    value: function getQuizze() {
-      var _this$getMainState = this.getMainState(),
-          quizze = _this$getMainState.quizze;
+      var questionsState = _store.questions.get();
 
-      return quizze;
+      var listQuestionToPlayGameState = _store.listQuestionToPlayGame.get();
+
+      var mainState = listQuestionToPlayGameState[currentIndexState];
+      return mainState;
     }
   }, {
     key: "handleRandom",
@@ -3025,8 +3137,8 @@ var ButtonHelp5050Container = /*#__PURE__*/function () {
   }, {
     key: "handleHelp5050",
     value: function handleHelp5050() {
-      var _this$getQuizze = this.getQuizze(),
-          answers = _this$getQuizze.answers;
+      var _this$getMainState = this.getMainState(),
+          answers = _this$getMainState.answers;
 
       var help5050State = _store.help5050.get();
 
@@ -3037,10 +3149,10 @@ var ButtonHelp5050Container = /*#__PURE__*/function () {
   }, {
     key: "handleDOM",
     value: function handleDOM() {
-      var help5050El = document.getElementById("help-5050");
+      var help5050El = document.getElementById('help-5050');
 
       if (help5050El) {
-        help5050El.addEventListener("click", this.handleHelp5050);
+        help5050El.addEventListener('click', this.handleHelp5050);
       }
     }
   }]);
@@ -3048,7 +3160,7 @@ var ButtonHelp5050Container = /*#__PURE__*/function () {
 }();
 
 exports.default = ButtonHelp5050Container;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../store":"src/store/index.js","../../utils":"src/utils/index.js"}],"src/core/PlayGamePage/ButtonHelpLookerContainer.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../store":"src/store/index.js","../../utils":"src/utils/index.js"}],"src/containers/PlayGamePage/ButtonHelpLookerContainer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3080,25 +3192,19 @@ var ButtonHelpLookerContainer = /*#__PURE__*/function () {
     value: function getMainState() {
       var currentIndexState = _store.currentIndex.get();
 
-      var mainState = _utils.listquestion[currentIndexState];
-      return mainState;
-    }
-  }, {
-    key: "getQuizze",
-    value: function getQuizze() {
-      var _this$getMainState = this.getMainState(),
-          quizze = _this$getMainState.quizze;
+      var questionsState = _store.questions.get();
 
-      return quizze;
+      var listQuestionToPlayGameState = _store.listQuestionToPlayGame.get();
+
+      var mainState = listQuestionToPlayGameState[currentIndexState];
+      return mainState;
     }
   }, {
     key: "handleHelpLooker",
     value: function handleHelpLooker() {
-      var _this$getQuizze = this.getQuizze(),
-          answers = _this$getQuizze.answers;
-
-      var _this$getMainState2 = this.getMainState(),
-          level = _this$getMainState2.level;
+      var _this$getMainState = this.getMainState(),
+          level = _this$getMainState.level,
+          answers = _this$getMainState.answers;
 
       var helpLookerState = _store.helpLooker.get();
 
@@ -3109,10 +3215,10 @@ var ButtonHelpLookerContainer = /*#__PURE__*/function () {
   }, {
     key: "handleDOM",
     value: function handleDOM() {
-      var helpLookerEL = document.getElementById("helplooker");
+      var helpLookerEL = document.getElementById('helplooker');
 
       if (helpLookerEL) {
-        helpLookerEL.addEventListener("click", this.handleHelpLooker);
+        helpLookerEL.addEventListener('click', this.handleHelpLooker);
       }
     }
   }]);
@@ -3126,12 +3232,12 @@ var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 module.exports = {
-  "wrapper": "_wrapper_78900",
-  "col": "_col_78900",
-  "item": "_item_78900",
-  "progress": "_progress_78900",
-  "progessinner": "_progessinner_78900",
-  "text": "_text_78900"
+  "wrapper": "_wrapper_b1cce",
+  "col": "_col_b1cce",
+  "item": "_item_b1cce",
+  "progress": "_progress_b1cce",
+  "progessinner": "_progessinner_b1cce",
+  "text": "_text_b1cce"
 };
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/Progress/Progress.js":[function(require,module,exports) {
 "use strict";
@@ -3160,7 +3266,7 @@ function Progress(_ref) {
 
 var _default = Progress;
 exports.default = _default;
-},{"../Progress/progress.scss":"src/templates/Progress/progress.scss"}],"src/core/PlayGamePage/PlayGamePage.js":[function(require,module,exports) {
+},{"../Progress/progress.scss":"src/templates/Progress/progress.scss"}],"src/containers/PlayGamePage/PlayGamePage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3173,8 +3279,6 @@ var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/cl
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
 var _MainScreen = _interopRequireDefault(require("../../templates/MainScreen/MainScreen"));
-
-var _data = _interopRequireDefault(require("../../api/data"));
 
 var _store = require("../../store");
 
@@ -3225,31 +3329,26 @@ var PlayGamePage = /*#__PURE__*/function () {
     value: function getMainState() {
       var currentIndexState = _store.currentIndex.get();
 
-      var mainState = _utils.listquestion[currentIndexState];
-      return mainState;
-    }
-  }, {
-    key: "getQuizze",
-    value: function getQuizze() {
-      var _this$getMainState = this.getMainState(),
-          quizze = _this$getMainState.quizze;
+      var questionsState = _store.questions.get();
 
-      return quizze;
+      var listQuestionToPlayGameState = _store.listQuestionToPlayGame.get();
+
+      var mainState = listQuestionToPlayGameState[currentIndexState];
+      return mainState || {};
     }
   }, {
     key: "renderAnswer",
     value: function renderAnswer() {
       var _this = this;
 
-      var _this$getMainState2 = this.getMainState(),
-          id = _this$getMainState2.id;
-
-      var _this$getQuizze = this.getQuizze(),
-          answers = _this$getQuizze.answers;
+      var _this$getMainState = this.getMainState(),
+          id = _this$getMainState.id,
+          _this$getMainState$an = _this$getMainState.answers,
+          answers = _this$getMainState$an === void 0 ? [] : _this$getMainState$an;
 
       return answers.map(function (answer) {
         return _this.showAnswerContainer.render(answer, id);
-      }).join("");
+      }).join('');
     }
   }, {
     key: "renderTextHelper5050",
@@ -3260,7 +3359,7 @@ var PlayGamePage = /*#__PURE__*/function () {
           data = helper5050State.data;
 
       if (!isRender) {
-        return "";
+        return '';
       }
 
       var result1 = data[0].name;
@@ -3276,7 +3375,7 @@ var PlayGamePage = /*#__PURE__*/function () {
           data = helperCallState.data;
 
       if (!isRender) {
-        return "";
+        return '';
       }
 
       return "\n      G\u01A1\u0323i y\u0301 t\u01B0\u0300 ng\u01B0\u01A1\u0300i th\xE2n: ".concat(data.name.toUpperCase(), "\n    ");
@@ -3293,7 +3392,7 @@ var PlayGamePage = /*#__PURE__*/function () {
           data = helperLookerState.data;
 
       if (!isRender) {
-        return "";
+        return '';
       }
 
       return "G\u01A1\u0323i y\u0301 t\u01B0\u0300 Kha\u0301n Gia\u0309:" + (0, _Progress.default)({
@@ -3307,7 +3406,7 @@ var PlayGamePage = /*#__PURE__*/function () {
 
       var userNameState = _store.userName.get();
 
-      var quizze = this.getQuizze();
+      var quizze = this.getMainState();
 
       var help5050State = _store.help5050.get();
 
@@ -3316,7 +3415,7 @@ var PlayGamePage = /*#__PURE__*/function () {
       var helpLookerState = _store.helpLooker.get();
 
       if (!userNameState) {
-        _route.default.redirect("/");
+        _route.default.redirect('/');
       }
 
       return (0, _MainScreen.default)({
@@ -3352,7 +3451,7 @@ var PlayGamePage = /*#__PURE__*/function () {
 }();
 
 exports.default = PlayGamePage;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/MainScreen/MainScreen":"src/templates/MainScreen/MainScreen.js","../../api/data":"src/api/data.js","../../store":"src/store/index.js","./ShowAnswerContainer":"src/core/PlayGamePage/ShowAnswerContainer.js","./ButtonNextQuestionContainer":"src/core/PlayGamePage/ButtonNextQuestionContainer.js","../../utils":"src/utils/index.js","../../route":"src/route.js","./ButtonStopTheGameContainer":"src/core/PlayGamePage/ButtonStopTheGameContainer.js","../../api/config":"src/api/config.js","./ButtonHelpCallContainer":"src/core/PlayGamePage/ButtonHelpCallContainer.js","./CountDownContainer":"src/core/PlayGamePage/CountDownContainer.js","./ButtonHelp5050Container":"src/core/PlayGamePage/ButtonHelp5050Container.js","./ButtonHelpLookerContainer":"src/core/PlayGamePage/ButtonHelpLookerContainer.js","../../templates/Progress/Progress":"src/templates/Progress/Progress.js"}],"src/core/LoseGamePage/LoseGamePage.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/MainScreen/MainScreen":"src/templates/MainScreen/MainScreen.js","../../store":"src/store/index.js","./ShowAnswerContainer":"src/containers/PlayGamePage/ShowAnswerContainer.js","./ButtonNextQuestionContainer":"src/containers/PlayGamePage/ButtonNextQuestionContainer.js","../../utils":"src/utils/index.js","../../route":"src/route.js","./ButtonStopTheGameContainer":"src/containers/PlayGamePage/ButtonStopTheGameContainer.js","../../api/config":"src/api/config.js","./ButtonHelpCallContainer":"src/containers/PlayGamePage/ButtonHelpCallContainer.js","./CountDownContainer":"src/containers/PlayGamePage/CountDownContainer.js","./ButtonHelp5050Container":"src/containers/PlayGamePage/ButtonHelp5050Container.js","./ButtonHelpLookerContainer":"src/containers/PlayGamePage/ButtonHelpLookerContainer.js","../../templates/Progress/Progress":"src/templates/Progress/Progress.js"}],"src/containers/LoseGamePage/LoseGamePage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3370,8 +3469,6 @@ var _store = require("../../store");
 
 var _route = _interopRequireDefault(require("../../route"));
 
-var _utils = require("../../utils");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var LoseGamePage = /*#__PURE__*/function () {
@@ -3386,7 +3483,7 @@ var LoseGamePage = /*#__PURE__*/function () {
       var userNameState = _store.userName.get();
 
       if (!userNameState) {
-        _route.default.redirect("/");
+        _route.default.redirect('/');
       }
 
       return (0, _EndGameScreen.default)({
@@ -3406,20 +3503,20 @@ var LoseGamePage = /*#__PURE__*/function () {
 
       _store.totalScore.resetScore();
 
-      _route.default.redirect("/");
+      _route.default.redirect('/');
     }
   }, {
     key: "handleDOM",
     value: function handleDOM() {
-      var restartEl = document.getElementById("restart");
-      restartEl && restartEl.addEventListener("click", this.handleRestart);
+      var restartEl = document.getElementById('restart');
+      restartEl && restartEl.addEventListener('click', this.handleRestart);
     }
   }]);
   return LoseGamePage;
 }();
 
 exports.default = LoseGamePage;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/EndGameScreen/EndGameScreen":"src/templates/EndGameScreen/EndGameScreen.js","../../store":"src/store/index.js","../../route":"src/route.js","../../utils":"src/utils/index.js"}],"src/templates/WinGameScreen/WinGameScreen.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/EndGameScreen/EndGameScreen":"src/templates/EndGameScreen/EndGameScreen.js","../../store":"src/store/index.js","../../route":"src/route.js"}],"src/templates/WinGameScreen/WinGameScreen.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3446,7 +3543,7 @@ function WinGame(props) {
 
 var _default = WinGame;
 exports.default = _default;
-},{"../HomeScreen/home.scss":"src/templates/HomeScreen/home.scss"}],"src/core/WinGamePage/WinGamePage.js":[function(require,module,exports) {
+},{"../HomeScreen/home.scss":"src/templates/HomeScreen/home.scss"}],"src/containers/WinGamePage/WinGamePage.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3479,7 +3576,7 @@ var WinGamePage = /*#__PURE__*/function () {
       var userNameState = _store.userName.get();
 
       if (!userNameState) {
-        _route.default.redirect("/");
+        _route.default.redirect('/');
       }
 
       return (0, _WinGameScreen.default)({
@@ -3499,20 +3596,777 @@ var WinGamePage = /*#__PURE__*/function () {
 
       _store.helpLooker.resetHelpLooker();
 
-      _route.default.redirect("/");
+      _route.default.redirect('/');
     }
   }, {
     key: "handleDOM",
     value: function handleDOM() {
-      var replayEl = document.getElementById("replay");
-      replayEl && replayEl.addEventListener("click", this.handleRePlay);
+      var replayEl = document.getElementById('replay');
+      replayEl && replayEl.addEventListener('click', this.handleRePlay);
     }
   }]);
   return WinGamePage;
 }();
 
 exports.default = WinGamePage;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/WinGameScreen/WinGameScreen":"src/templates/WinGameScreen/WinGameScreen.js","../../store":"src/store/index.js","../../utils":"src/utils/index.js","../../route":"src/route.js"}],"src/core/quizzGame.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/WinGameScreen/WinGameScreen":"src/templates/WinGameScreen/WinGameScreen.js","../../store":"src/store/index.js","../../utils":"src/utils/index.js","../../route":"src/route.js"}],"src/templates/ContributeQuestion/contributequestion.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+module.exports = {
+  "header": "_header_26ea3",
+  "form_group": "_form_group_26ea3",
+  "form_label": "_form_label_26ea3",
+  "form_enterquestion": "_form_enterquestion_26ea3",
+  "form_span": "_form_span_26ea3",
+  "form_enteranswer": "_form_enteranswer_26ea3",
+  "select": "_select_26ea3",
+  "submit": "_submit_26ea3",
+  "back": "_back_26ea3",
+  "container": "_container_26ea3"
+};
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/ContributeQuestion/ContributeQuestions.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _contributequestion = _interopRequireDefault(require("../ContributeQuestion/contributequestion.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function TextArea(_ref) {
+  var name = _ref.name,
+      type = _ref.type,
+      placeholder = _ref.placeholder,
+      label = _ref.label,
+      _ref$defaultValue = _ref.defaultValue,
+      defaultValue = _ref$defaultValue === void 0 ? '' : _ref$defaultValue;
+  return (
+    /*html*/
+    "\n    <div class=\"".concat(_contributequestion.default.form_group, "\">\n      <label class=\"").concat(_contributequestion.default.form_label, "\">").concat(label, ":</label>\n      <textarea name=\"").concat(name, "\" class=\"").concat(_contributequestion.default.form_enterquestion, " field\" type=\"").concat(type, "\" placeholder=\"").concat(placeholder, "\">").concat(defaultValue, "</textarea>\n    </div>\n  ")
+  );
+}
+
+function InputTextGroup(_ref2) {
+  var label = _ref2.label,
+      group = _ref2.group,
+      name = _ref2.name,
+      _ref2$defaultValue = _ref2.defaultValue,
+      defaultValue = _ref2$defaultValue === void 0 ? [] : _ref2$defaultValue;
+
+  var renderInputText = function renderInputText(name) {
+    return function (item, index) {
+      var value = defaultValue.length && defaultValue[index].value || item.value;
+      var checked = defaultValue.length && defaultValue[index].isCorrect || false ? 'checked' : '';
+      return (
+        /*html*/
+        "\n      <div class=\"".concat(_contributequestion.default.form_enteranswer, "\">").concat(item.name, ":\n      <input type=\"text\" name=\"").concat(item.name, "\" value=\"").concat(value, "\"/>\n      <span>\n        Cho\u0323n \u0110a\u0301p a\u0301n \u0111u\u0301ng: \n        <input type=\"radio\" name=").concat(name, " value=\"").concat(item.name, "\" ").concat(checked, "/></span>\n      </div>\n    ")
+      );
+    };
+  };
+
+  return (
+    /*html*/
+    "\n    <div class=\"".concat(_contributequestion.default.form_group, "\">\n      <label class=\"").concat(_contributequestion.default.form_label, "\">").concat(label, ":</label>\n      <div class=\"inputTextGroup\" data-name=\"").concat(name, "\">").concat(group.map(renderInputText(name)).join(''), "</div>\n    </div>\n  ")
+  );
+}
+
+function SelectLevel(_ref3) {
+  var name = _ref3.name,
+      label = _ref3.label,
+      options = _ref3.options,
+      _ref3$defaultValue = _ref3.defaultValue,
+      defaultValue = _ref3$defaultValue === void 0 ? '' : _ref3$defaultValue;
+
+  var renderOption = function renderOption(item) {
+    return (
+      /*html*/
+      "\n      <option value=\"".concat(item.value, "\" ").concat(defaultValue === item.value ? 'selected' : '', ">").concat(item.label, "</option>\n    ")
+    );
+  };
+
+  return (
+    /*html*/
+    "\n    <div class=\"".concat(_contributequestion.default.form_group, "\">\n    <label class=\"").concat(_contributequestion.default.form_label, "\">").concat(label, "</label>\n    <select class=\"field\" name=\"").concat(name, "\">").concat(options.map(renderOption).join(''), "</select>\n    </div>\n  ")
+  );
+}
+
+function ContributeQuestions(_ref4) {
+  var fields = _ref4.fields,
+      _ref4$defaultResult = _ref4.defaultResult,
+      defaultResult = _ref4$defaultResult === void 0 ? {} : _ref4$defaultResult,
+      _ref4$buttonText = _ref4.buttonText,
+      buttonText = _ref4$buttonText === void 0 ? 'submit' : _ref4$buttonText,
+      _ref4$isAlertVisible = _ref4.isAlertVisible,
+      isAlertVisible = _ref4$isAlertVisible === void 0 ? false : _ref4$isAlertVisible;
+
+  var renderField = function renderField(field) {
+    switch (field.type) {
+      case 'textarea':
+        return TextArea({
+          name: field.name,
+          type: field.type,
+          placeholder: field.placeholder,
+          defaultValue: defaultResult[field.name],
+          label: field.label
+        });
+
+      case 'inputTextGroup':
+        return InputTextGroup({
+          group: field.group,
+          label: field.label,
+          defaultValue: defaultResult[field.name],
+          name: field.name
+        });
+
+      case 'selectlevel':
+        return SelectLevel({
+          name: field.name,
+          options: field.options,
+          defaultValue: defaultResult[field.name],
+          label: field.label
+        });
+
+      default:
+        return '';
+    }
+  };
+
+  return (
+    /*html*/
+    "\n  <div class=".concat(_contributequestion.default.header, ">\n    <div class=").concat(_contributequestion.default.item, " id=\"back\">\n      <div class=\"").concat(_contributequestion.default.back, "\"></div>\n    </div>\n  </div>\n  <div class=").concat(_contributequestion.default.container, ">\n    <form action=\"\" id=\"form-addquestion\"> \n      ").concat(fields.map(renderField).join(''), "\n        <div class=\"").concat(_contributequestion.default.form_group, "\">\n          <button type=\"submit\">").concat(buttonText, "</button>\n          ").concat(isAlertVisible ? '<span>Cam on ban da dong gop cho chung toi</span>' : '', "\n        </div>\n    </form>\n  </div>\n")
+  );
+}
+
+var _default = ContributeQuestions;
+exports.default = _default;
+},{"../ContributeQuestion/contributequestion.scss":"src/templates/ContributeQuestion/contributequestion.scss"}],"src/api/dataform.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var dataForm = [{
+  name: "question",
+  type: "textarea",
+  label: "Câu hỏi",
+  placeholder: "Nhập Câu Hỏi"
+}, {
+  name: "answers",
+  type: "inputTextGroup",
+  label: "Các đáp án",
+  group: [{
+    name: "A",
+    value: ""
+  }, {
+    name: "B",
+    value: ""
+  }, {
+    name: "C",
+    value: ""
+  }, {
+    name: "D",
+    value: ""
+  }]
+}, {
+  name: "level",
+  type: "selectlevel",
+  label: "Độ Khó",
+  options: [{
+    label: "Easy",
+    value: "easy"
+  }, {
+    label: "Normal",
+    value: "normal"
+  }, {
+    label: "Hard",
+    value: "hard"
+  }]
+}];
+var _default = dataForm;
+exports.default = _default;
+},{}],"src/containers/AddQuestionsPage/AddQuestionsPage.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/defineProperty"));
+
+var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers/toConsumableArray"));
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
+
+var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+
+var _ContributeQuestions = _interopRequireDefault(require("../../templates/ContributeQuestion/ContributeQuestions"));
+
+var _dataform = _interopRequireDefault(require("../../api/dataform"));
+
+var _store = require("../../store");
+
+var _fetchQuestionsDraft = require("../../api/fetchQuestionsDraft");
+
+var _fetchQuestions = require("../../api/fetchQuestions");
+
+var _route = _interopRequireDefault(require("../../route"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+var editItem = {
+  id: 5,
+  level: 'hard',
+  question: 'Bộ phim Chị Dậu được chuyển thể từ tác phẩm nào?',
+  answers: [{
+    value: 'A: Người mẹ cầm súng',
+    name: 'a',
+    isCorrect: false
+  }, {
+    value: 'B: Vợ chồng A Phủ',
+    name: 'b',
+    isCorrect: false
+  }, {
+    value: 'C: Tuổi thơ dữ dội',
+    name: 'c',
+    isCorrect: false
+  }, {
+    value: 'D: Tắt đèn',
+    name: 'd',
+    isCorrect: true
+  }],
+  score: 500
+};
+
+var AddQuestionsPage = /*#__PURE__*/function () {
+  function AddQuestionsPage() {
+    (0, _classCallCheck2.default)(this, AddQuestionsPage);
+  }
+
+  (0, _createClass2.default)(AddQuestionsPage, [{
+    key: "render",
+    value: function render(type) {
+      var _route$get = _route.default.get(),
+          data = _route$get.data;
+
+      var questionDraftState = _store.questionDraft.get();
+
+      var defaultResult = type === 'edit' ? data.questionDraft : [];
+
+      if (type === 'edit' && !data.questionDraft) {
+        _route.default.redirect('admin/moderation_question');
+      }
+
+      return (0, _ContributeQuestions.default)({
+        fields: _dataform.default,
+        defaultResult: defaultResult,
+        buttonText: questionDraftState.isLoading ? 'Loading...' : 'Submit',
+        isAlertVisible: questionDraftState.isAlert
+      });
+    }
+  }, {
+    key: "_handleSubmit",
+    value: function _handleSubmit(event) {
+      event.preventDefault();
+
+      var _route$get2 = _route.default.get(),
+          data = _route$get2.data;
+
+      var formEL = document.getElementById('form-addquestion');
+      var fieldEls = (0, _toConsumableArray2.default)(formEL.querySelectorAll('.field'));
+      var inputTextGroupEls = (0, _toConsumableArray2.default)(formEL.querySelectorAll('.inputTextGroup'));
+      var input = inputTextGroupEls.reduce(function (obj, inputTextGroupEl) {
+        var inputTextGroupItemEls = (0, _toConsumableArray2.default)(inputTextGroupEl.querySelectorAll('input[type="text"]'));
+        var name = inputTextGroupEl.getAttribute('data-name');
+        var values = inputTextGroupItemEls.map(function (item) {
+          var radioEl = inputTextGroupEl.querySelector("input[type=\"radio\"][value=\"".concat(item.name, "\"]"));
+          return {
+            value: "".concat(item.name, ": ").concat(item.value),
+            name: item.name,
+            isCorrect: radioEl.checked
+          };
+        });
+        return _objectSpread(_objectSpread({}, obj), {}, (0, _defineProperty2.default)({}, name, values));
+      }, {});
+
+      var getScore = function getScore(value) {
+        switch (value) {
+          case 'normal':
+            return 500;
+
+          case 'hard':
+            return 1000;
+
+          case 'easy':
+          default:
+            return 100;
+        }
+      };
+
+      var result = fieldEls.reduce(function (obj, fieldEl) {
+        var _objectSpread3;
+
+        var value = fieldEl.value,
+            name = fieldEl.name;
+        return _objectSpread(_objectSpread({}, obj), {}, (_objectSpread3 = {}, (0, _defineProperty2.default)(_objectSpread3, name, value), (0, _defineProperty2.default)(_objectSpread3, "score", getScore(value)), _objectSpread3), input);
+      }, {});
+
+      if (data.isEdit) {
+        _store.questions.editQuestionRequest();
+
+        (0, _fetchQuestions.postQuestion)(result).then(function (dataQuestion) {
+          (0, _fetchQuestionsDraft.deleteQuestionDraft)(data.questionDraft.id).then(function () {
+            _store.questionDraft.deleteQuestionDraftSuccess(data.questionDraft.id);
+          });
+
+          _route.default.to('admin/moderation_question');
+        });
+      } else {
+        _store.questionDraft.addQuestionDraftRequest();
+
+        (0, _fetchQuestionsDraft.postQuestionDraft)(result).then(function (data) {
+          _store.questionDraft.addQuestionDraftSuccess(data); //timeout to remove aleart after add
+
+
+          var timeOut = setTimeout(function () {
+            _store.questionDraft.resetAlert();
+
+            clearTimeout(timeOut);
+          }, 3000);
+        });
+      }
+    }
+  }, {
+    key: "_handleBackHomePage",
+    value: function _handleBackHomePage() {
+      _route.default.to('/');
+    }
+  }, {
+    key: "handleDOM",
+    value: function handleDOM() {
+      var buttonSubmitEl = document.querySelector("button[type='submit']");
+      var buttonBackEl = document.querySelector('#back');
+
+      if (buttonSubmitEl) {
+        buttonSubmitEl.addEventListener('click', this._handleSubmit);
+      }
+
+      buttonBackEl && buttonBackEl.addEventListener('click', this._handleBackHomePage);
+    }
+  }]);
+  return AddQuestionsPage;
+}();
+
+exports.default = AddQuestionsPage;
+},{"@babel/runtime/helpers/defineProperty":"node_modules/@babel/runtime/helpers/defineProperty.js","@babel/runtime/helpers/toConsumableArray":"node_modules/@babel/runtime/helpers/toConsumableArray.js","@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/ContributeQuestion/ContributeQuestions":"src/templates/ContributeQuestion/ContributeQuestions.js","../../api/dataform":"src/api/dataform.js","../../store":"src/store/index.js","../../api/fetchQuestionsDraft":"src/api/fetchQuestionsDraft.js","../../api/fetchQuestions":"src/api/fetchQuestions.js","../../route":"src/route.js"}],"src/templates/ModerationQuestions/moderationQuestion.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+module.exports = {
+  "container": "_container_ddc25",
+  "content": "_content_ddc25",
+  "item": "_item_ddc25",
+  "title": "_title_ddc25",
+  "answer": "_answer_ddc25",
+  "iscorrect": "_iscorrect_ddc25",
+  "score": "_score_ddc25",
+  "value": "_value_ddc25",
+  "level": "_level_ddc25",
+  "action": "_action_ddc25",
+  "button": "_button_ddc25",
+  "loading": "_loading_ddc25"
+};
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/ModerationQuestions/ModerationQuestion.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _moderationQuestion = _interopRequireDefault(require("../ModerationQuestions/moderationQuestion.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ModerationQuestion(_ref) {
+  var data = _ref.data,
+      isLoading = _ref.isLoading;
+  return (
+    /*html*/
+    "\n    <div class=\"".concat(_moderationQuestion.default.container, "\">\n    ").concat(isLoading ? "<div class=\"".concat(_moderationQuestion.default.loading, "\">loading</div>") : '', "\n      <h1>Danh Sa\u0301ch ca\u0301c c\xE2u ho\u0309i \u0111\u01B0\u01A1\u0323c \u0111o\u0301ng go\u0301p</h1>\n      ").concat(data.map(function (item) {
+      return "\n          <div class=\"".concat(_moderationQuestion.default.content, "\">\n            <div class=\"").concat(_moderationQuestion.default.item, "\">\n              <div class=\"").concat(_moderationQuestion.default.title, "\">C\xE2u Ho\u0309i</div>\n              <div>").concat(item.question, "</div>\n            </div>  \n            <div class=\"").concat(_moderationQuestion.default.item, "\">\n              <div class=\"").concat(_moderationQuestion.default.title, "\">Ca\u0301c \u0110a\u0301p a\u0301n</div>\n              <div>").concat(item.answers.map(function (item) {
+        return "\n                  <div class=\"".concat(_moderationQuestion.default.answer, "\">\n                    <div class=\"").concat(_moderationQuestion.default.value, "\">").concat(item.value, "</div>\n                    <div class=\"").concat(_moderationQuestion.default.iscorrect, "\">").concat(item.isCorrect, "</div>\n                  </div>\n                ");
+      }).join(''), "</div>\n              </div>  \n              <div class=\"").concat(_moderationQuestion.default.item, "\">\n              <div class=\"").concat(_moderationQuestion.default.title, "\">\u0110i\xEA\u0309m</div>\n              <div class=\"").concat(_moderationQuestion.default.score, "\">").concat(item.score, "</div>\n            </div>  \n            <div class=\"").concat(_moderationQuestion.default.item, "\">\n              <div class=\"").concat(_moderationQuestion.default.title, "\">\u0110\xF4\u0323 Kho\u0301</div>\n              <div class=\"").concat(_moderationQuestion.default.level, "\">").concat(item.level, "</div>\n            </div>  \n            <div class=\"").concat(_moderationQuestion.default.item, "\">\n              <div class=\"").concat(_moderationQuestion.default.title, "\">Ch\u01B0\u0301c N\u0103ng</div>\n              <div class=\"").concat(_moderationQuestion.default.action, "\">\n                <button data-id=\"").concat(item.id, "\" type=\"button\" class=\"btn btn-success ").concat(_moderationQuestion.default.button, "\" data-button=\"add-question-").concat(item.id, "\">Cho\u0323n</button>\n                <button data-id=\"").concat(item.id, "\" type=\"button\" class=\"btn btn-primary ").concat(_moderationQuestion.default.button, "\" data-button=\"edit-question-").concat(item.id, "\">S\u01B0\u0309a</button>\n                <button data-id=\"").concat(item.id, "\" type=\"button\" class=\"btn btn-danger\" data-button=\"delete-question-").concat(item.id, "\">Xo\u0301a</button>\n              </div>\n            </div>  \n          </div>\n        ");
+    }).join(''), "\n    </div>\n  ")
+  );
+}
+
+var _default = ModerationQuestion;
+exports.default = _default;
+},{"../ModerationQuestions/moderationQuestion.scss":"src/templates/ModerationQuestions/moderationQuestion.scss"}],"src/containers/ModerationQuestionsPage/ModerationQuestionsPage.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/slicedToArray"));
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
+
+var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+
+var _store = require("../../store");
+
+var _ModerationQuestion = _interopRequireDefault(require("../../templates/ModerationQuestions/ModerationQuestion"));
+
+var _fetchQuestionsDraft = require("../../api/fetchQuestionsDraft");
+
+var _fetchQuestions = require("../../api/fetchQuestions");
+
+var _route = _interopRequireDefault(require("../../route"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ModerationQuestionsPage = /*#__PURE__*/function () {
+  function ModerationQuestionsPage() {
+    (0, _classCallCheck2.default)(this, ModerationQuestionsPage);
+    this._handleDeleteQuestion = this._handleDeleteQuestion.bind(this);
+    this._handleAddQuestion = this._handleAddQuestion.bind(this);
+  }
+
+  (0, _createClass2.default)(ModerationQuestionsPage, [{
+    key: "render",
+    value: function render() {
+      var questionDraftState = _store.questionDraft.get();
+
+      var secretState = _store.secret.get();
+
+      if (!secretState) {
+        _route.default.redirect('/admin');
+      }
+
+      return (0, _ModerationQuestion.default)({
+        data: questionDraftState.data,
+        isLoading: questionDraftState.isDeleteLoading
+      });
+    }
+  }, {
+    key: "_handleDeleteQuestion",
+    value: function _handleDeleteQuestion(event) {
+      var idQuestionDraft = event.target.getAttribute('data-id');
+
+      _store.questionDraft.deleteQuestionDraftRequest();
+
+      (0, _fetchQuestionsDraft.deleteQuestionDraft)(idQuestionDraft).then(function () {
+        _store.questionDraft.deleteQuestionDraftSuccess(idQuestionDraft);
+      });
+    }
+  }, {
+    key: "_handleAddQuestion",
+    value: function _handleAddQuestion(event) {
+      var _this = this;
+
+      var idQuestionDraft = event.target.getAttribute('data-id');
+
+      var questionDraftState = _store.questionDraft.get();
+
+      var _questionDraftState$d = questionDraftState.data.filter(function (item) {
+        return item.id === idQuestionDraft;
+      }),
+          _questionDraftState$d2 = (0, _slicedToArray2.default)(_questionDraftState$d, 1),
+          question = _questionDraftState$d2[0];
+
+      console.log(question);
+
+      _store.questions.addQuestionRequest();
+
+      (0, _fetchQuestions.postQuestion)(question).then(function (data) {
+        _store.questions.addQuestionSuccess(data);
+
+        _this._handleDeleteQuestion(event);
+      });
+    }
+  }, {
+    key: "_handleEditQuestion",
+    value: function _handleEditQuestion() {
+      var idQuestionDraft = event.target.getAttribute('data-id');
+
+      var questionDraftState = _store.questionDraft.get();
+
+      var _questionDraftState$d3 = questionDraftState.data.filter(function (item) {
+        return item.id === idQuestionDraft;
+      }),
+          _questionDraftState$d4 = (0, _slicedToArray2.default)(_questionDraftState$d3, 1),
+          question = _questionDraftState$d4[0];
+
+      _route.default.to('/edit_question', {
+        isEdit: true,
+        questionDraft: question
+      });
+    }
+  }, {
+    key: "handleDOM",
+    value: function handleDOM() {
+      var _this2 = this;
+
+      var questionDraftState = _store.questionDraft.get();
+
+      questionDraftState.data.forEach(function (item) {
+        var id = item.id;
+        var buttonDeleteQuestionEl = document.querySelector("[data-button=\"delete-question-".concat(id, "\"]"));
+        var buttonEditQuestionEl = document.querySelector("[data-button=\"edit-question-".concat(id, "\"]"));
+        var buttonAddQuestionEl = document.querySelector("[data-button=\"add-question-".concat(id, "\"]"));
+        buttonDeleteQuestionEl && buttonDeleteQuestionEl.addEventListener('click', _this2._handleDeleteQuestion);
+        buttonAddQuestionEl && buttonAddQuestionEl.addEventListener('click', _this2._handleAddQuestion);
+        buttonEditQuestionEl && buttonEditQuestionEl.addEventListener('click', _this2._handleEditQuestion);
+      });
+    }
+  }]);
+  return ModerationQuestionsPage;
+}();
+
+exports.default = ModerationQuestionsPage;
+},{"@babel/runtime/helpers/slicedToArray":"node_modules/@babel/runtime/helpers/slicedToArray.js","@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../store":"src/store/index.js","../../templates/ModerationQuestions/ModerationQuestion":"src/templates/ModerationQuestions/ModerationQuestion.js","../../api/fetchQuestionsDraft":"src/api/fetchQuestionsDraft.js","../../api/fetchQuestions":"src/api/fetchQuestions.js","../../route":"src/route.js"}],"src/templates/Login/login.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+module.exports = {
+  "container": "_container_5b844"
+};
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/Login/Login.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _login = _interopRequireDefault(require("../Login/login.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Login() {
+  return (
+    /*html*/
+    "\n    <div class=\"".concat(_login.default.container, "\">\n      <h1>Cha\u0300o Ba\u0323n</h1>\n      <div>Vui lo\u0300ng Nh\xE2\u0323p M\xE2\u0323t Kh\xE2\u0309u</div>\n      <form id=\"form-login\">\n        <input type=\"text\"/>\n      </form>\n    </div>\n  ")
+  );
+}
+
+var _default = Login;
+exports.default = _default;
+},{"../Login/login.scss":"src/templates/Login/login.scss"}],"src/templates/AdminManagementPage/adminManagementPage.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+module.exports = {
+  "header": "_header_15251",
+  "logout": "_logout_15251",
+  "list": "_list_15251"
+};
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/AdminManagementPage/AdminManagementPage.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _adminManagementPage = _interopRequireDefault(require("../AdminManagementPage/adminManagementPage.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function AdminManagementPage() {
+  return "\n    <div class=\"".concat(_adminManagementPage.default.container, "\">\n      <div class=\"").concat(_adminManagementPage.default.header, "\">\n        <a href=\"#\" class=\"").concat(_adminManagementPage.default.logout, "\" id=\"logout\">Logout</a>\n      </div>\n      <ul class=\"").concat(_adminManagementPage.default.list, "\">\n        <li><a href=\"\" class=\"link-questions\">Danh sa\u0301ch C\xE2u Ho\u0309i</a></li>\n        <li><a href=\"\" class=\"link-questionsdraft\">Danh sa\u0301ch C\xE2u Ho\u0309i \u0111\u01B0\u01A1\u0323c \u0110o\u0301ng go\u0301p</a></li>\n      </ul>\n    </div>\n  ");
+}
+
+var _default = AdminManagementPage;
+exports.default = _default;
+},{"../AdminManagementPage/adminManagementPage.scss":"src/templates/AdminManagementPage/adminManagementPage.scss"}],"src/containers/AdminPage/AdminPage.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
+
+var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+
+var _Login = _interopRequireDefault(require("../../templates/Login/Login"));
+
+var _route = _interopRequireDefault(require("../../route"));
+
+var _constants = require("../../constants");
+
+var _store = require("../../store");
+
+var _AdminManagementPage = _interopRequireDefault(require("../../templates/AdminManagementPage/AdminManagementPage"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AdminPage = /*#__PURE__*/function () {
+  function AdminPage() {
+    (0, _classCallCheck2.default)(this, AdminPage);
+  }
+
+  (0, _createClass2.default)(AdminPage, [{
+    key: "render",
+    value: function render() {
+      var secretState = _store.secret.get();
+
+      if (!!secretState) {
+        return (0, _AdminManagementPage.default)();
+      }
+
+      return (0, _Login.default)();
+    }
+  }, {
+    key: "_handleLogin",
+    value: function _handleLogin(event) {
+      event.preventDefault();
+      var inputEl = event.target.querySelector('input');
+      var value = inputEl.value;
+
+      if (value === _constants.SECRET) {
+        _store.secret.setSecret(value);
+      }
+    }
+  }, {
+    key: "handleLogout",
+    value: function handleLogout() {
+      _store.secret.resetSecret();
+    }
+  }, {
+    key: "handleLinkQuestionsDraft",
+    value: function handleLinkQuestionsDraft(event) {
+      event.preventDefault();
+
+      _route.default.to('admin/moderation_question');
+    }
+  }, {
+    key: "handleLinkQuestions",
+    value: function handleLinkQuestions(event) {
+      event.preventDefault();
+
+      _route.default.to('admin/list_questions');
+    }
+  }, {
+    key: "handleDOM",
+    value: function handleDOM() {
+      var formLoginEl = document.getElementById('form-login');
+
+      if (formLoginEl) {
+        formLoginEl.addEventListener('submit', this._handleLogin);
+      }
+
+      var logoutEl = document.getElementById('logout');
+      logoutEl && logoutEl.addEventListener('click', this.handleLogout);
+      var linkquestionsDraftEl = document.querySelector('.link-questionsdraft');
+      linkquestionsDraftEl && linkquestionsDraftEl.addEventListener('click', this.handleLinkQuestionsDraft);
+      var linkquestionsEl = document.querySelector('.link-questions');
+      linkquestionsEl && linkquestionsEl.addEventListener('click', this.handleLinkQuestions);
+    }
+  }]);
+  return AdminPage;
+}();
+
+exports.default = AdminPage;
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/Login/Login":"src/templates/Login/Login.js","../../route":"src/route.js","../../constants":"src/constants.js","../../store":"src/store/index.js","../../templates/AdminManagementPage/AdminManagementPage":"src/templates/AdminManagementPage/AdminManagementPage.js"}],"src/templates/ListQuestions/listquestions.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+module.exports = {
+  "container": "_container_3e9d9",
+  "content": "_content_3e9d9",
+  "item": "_item_3e9d9",
+  "title": "_title_3e9d9",
+  "answer": "_answer_3e9d9",
+  "iscorrect": "_iscorrect_3e9d9",
+  "score": "_score_3e9d9",
+  "value": "_value_3e9d9",
+  "level": "_level_3e9d9"
+};
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/templates/ListQuestions/ListQuestions.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _listquestions = _interopRequireDefault(require("../ListQuestions/listquestions.scss"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ListQuestions(_ref) {
+  var data = _ref.data;
+  return "\n    <div class=\"".concat(_listquestions.default.container, "\">\n      <h1>Danh Sa\u0301ch ca\u0301c c\xE2u ho\u0309i</h1>\n      ").concat(data.map(function (item) {
+    return "\n          <div class=\"".concat(_listquestions.default.content, "\">\n            <div class=\"").concat(_listquestions.default.item, "\">\n              <div class=\"").concat(_listquestions.default.title, "\">C\xE2u Ho\u0309i</div>\n              <div>").concat(item.question, "</div>\n            </div>  \n            <div class=\"").concat(_listquestions.default.item, "\">\n              <div class=\"").concat(_listquestions.default.title, "\">Ca\u0301c \u0110a\u0301p a\u0301n</div>\n              <div>").concat(item.answers.map(function (item) {
+      return "\n                  <div class=\"".concat(_listquestions.default.answer, "\">\n                    <div class=\"").concat(_listquestions.default.value, "\">\n                      <span>").concat(item.value, "</span>\n                      <span class=\"").concat(_listquestions.default.iscorrect, "\">").concat(item.isCorrect ? 'Day la' : '', "</span>\n                    </div>\n                  </div>\n                ");
+    }).join(''), "</div>\n              </div>  \n              <div class=\"").concat(_listquestions.default.item, "\">\n              <div class=\"").concat(_listquestions.default.title, "\">\u0110i\xEA\u0309m</div>\n              <div class=\"").concat(_listquestions.default.score, "\">").concat(item.score, "</div>\n            </div>  \n            <div class=\"").concat(_listquestions.default.item, "\">\n              <div class=\"").concat(_listquestions.default.title, "\">\u0110\xF4\u0323 Kho\u0301</div>\n              <div class=\"").concat(_listquestions.default.level, "\">").concat(item.level, "</div>\n            </div>  \n          </div>\n        ");
+  }).join(''), "\n    </div>\n  ");
+}
+
+var _default = ListQuestions;
+exports.default = _default;
+},{"../ListQuestions/listquestions.scss":"src/templates/ListQuestions/listquestions.scss"}],"src/containers/ListQuestionsPage/ListQuestionPage.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
+
+var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+
+var _ListQuestions = _interopRequireDefault(require("../../templates/ListQuestions/ListQuestions"));
+
+var _store = require("../../store");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ListQuestionsPage = /*#__PURE__*/function () {
+  function ListQuestionsPage() {
+    (0, _classCallCheck2.default)(this, ListQuestionsPage);
+  }
+
+  (0, _createClass2.default)(ListQuestionsPage, [{
+    key: "render",
+    value: function render() {
+      var questionsState = _store.questions.get();
+
+      return (0, _ListQuestions.default)({
+        data: questionsState.data
+      });
+    }
+  }, {
+    key: "handleDOM",
+    value: function handleDOM() {}
+  }]);
+  return ListQuestionsPage;
+}();
+
+exports.default = ListQuestionsPage;
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","../../templates/ListQuestions/ListQuestions":"src/templates/ListQuestions/ListQuestions.js","../../store":"src/store/index.js"}],"src/containers/QuizzGame.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3540,9 +4394,17 @@ var _LoseGamePage = _interopRequireDefault(require("./LoseGamePage/LoseGamePage"
 
 var _WinGamePage = _interopRequireDefault(require("./WinGamePage/WinGamePage"));
 
+var _AddQuestionsPage = _interopRequireDefault(require("./AddQuestionsPage/AddQuestionsPage"));
+
+var _ModerationQuestionsPage = _interopRequireDefault(require("./ModerationQuestionsPage/ModerationQuestionsPage"));
+
 var _store = require("../store");
 
 var _route = _interopRequireDefault(require("../route"));
+
+var _AdminPage = _interopRequireDefault(require("./AdminPage/AdminPage"));
+
+var _ListQuestionPage = _interopRequireDefault(require("./ListQuestionsPage/ListQuestionPage"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3567,6 +4429,10 @@ var QuizzGame = /*#__PURE__*/function (_Container) {
       this.playGamePage = new _PlayGamePage.default();
       this.loseGamePage = new _LoseGamePage.default();
       this.winGamePage = new _WinGamePage.default();
+      this.addQuestionsPage = new _AddQuestionsPage.default();
+      this.moderationQuestionsPage = new _ModerationQuestionsPage.default();
+      this.listQuestionsPage = new _ListQuestionPage.default();
+      this.adminPage = new _AdminPage.default();
       this.init = this.init.bind(this);
 
       _store.isCorrect.subscribe(this.init);
@@ -3581,6 +4447,12 @@ var QuizzGame = /*#__PURE__*/function (_Container) {
 
       _store.helpLooker.subscribe(this.init);
 
+      _store.questionDraft.subscribe(this.init);
+
+      _store.questions.subscribe(this.init);
+
+      _store.secret.subscribe(this.init);
+
       _route.default.subscribe(this.init);
     }
   }, {
@@ -3590,14 +4462,29 @@ var QuizzGame = /*#__PURE__*/function (_Container) {
           url = _route$get.url;
 
       switch (url) {
-        case "lose_game":
+        case 'lose_game':
           return this.loseGamePage.render();
 
-        case "win_game":
+        case 'win_game':
           return this.winGamePage.render();
 
-        case "play_game":
+        case 'play_game':
           return this.playGamePage.render();
+
+        case 'add_question':
+          return this.addQuestionsPage.render('add');
+
+        case 'edit_question':
+          return this.addQuestionsPage.render('edit');
+
+        case 'admin':
+          return this.adminPage.render();
+
+        case 'admin/moderation_question':
+          return this.moderationQuestionsPage.render();
+
+        case 'admin/list_questions':
+          return this.listQuestionsPage.render();
 
         default:
           return this.startGamePage.render();
@@ -3615,6 +4502,10 @@ var QuizzGame = /*#__PURE__*/function (_Container) {
       this.playGamePage.handleDOM();
       this.loseGamePage.handleDOM();
       this.winGamePage.handleDOM();
+      this.addQuestionsPage.handleDOM();
+      this.adminPage.handleDOM();
+      this.moderationQuestionsPage.handleDOM();
+      this.listQuestionsPage.handleDOM();
     }
   }, {
     key: "init",
@@ -3628,7 +4519,7 @@ var QuizzGame = /*#__PURE__*/function (_Container) {
 }(_utils.Container);
 
 exports.default = QuizzGame;
-},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","../utils":"src/utils/index.js","./StartGamePage/StartGamePage":"src/core/StartGamePage/StartGamePage.js","./PlayGamePage/PlayGamePage":"src/core/PlayGamePage/PlayGamePage.js","./LoseGamePage/LoseGamePage":"src/core/LoseGamePage/LoseGamePage.js","./WinGamePage/WinGamePage":"src/core/WinGamePage/WinGamePage.js","../store":"src/store/index.js","../route":"src/route.js"}],"src/styles/style.scss":[function(require,module,exports) {
+},{"@babel/runtime/helpers/classCallCheck":"node_modules/@babel/runtime/helpers/classCallCheck.js","@babel/runtime/helpers/createClass":"node_modules/@babel/runtime/helpers/createClass.js","@babel/runtime/helpers/inherits":"node_modules/@babel/runtime/helpers/inherits.js","@babel/runtime/helpers/possibleConstructorReturn":"node_modules/@babel/runtime/helpers/possibleConstructorReturn.js","@babel/runtime/helpers/getPrototypeOf":"node_modules/@babel/runtime/helpers/getPrototypeOf.js","../utils":"src/utils/index.js","./StartGamePage/StartGamePage":"src/containers/StartGamePage/StartGamePage.js","./PlayGamePage/PlayGamePage":"src/containers/PlayGamePage/PlayGamePage.js","./LoseGamePage/LoseGamePage":"src/containers/LoseGamePage/LoseGamePage.js","./WinGamePage/WinGamePage":"src/containers/WinGamePage/WinGamePage.js","./AddQuestionsPage/AddQuestionsPage":"src/containers/AddQuestionsPage/AddQuestionsPage.js","./ModerationQuestionsPage/ModerationQuestionsPage":"src/containers/ModerationQuestionsPage/ModerationQuestionsPage.js","../store":"src/store/index.js","../route":"src/route.js","./AdminPage/AdminPage":"src/containers/AdminPage/AdminPage.js","./ListQuestionsPage/ListQuestionPage":"src/containers/ListQuestionsPage/ListQuestionPage.js"}],"src/styles/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -3637,18 +4528,18 @@ module.exports = {};
 },{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
-var _data = _interopRequireDefault(require("./api/data"));
+var _QuizzGame = _interopRequireDefault(require("./containers/QuizzGame"));
 
-var _quizzGame = _interopRequireDefault(require("./core/quizzGame"));
+var _constants = require("./constants");
 
 require("./styles/style.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-new _quizzGame.default({
-  el: document.getElementById("root")
+new _QuizzGame.default({
+  el: _constants.ROOT
 });
-},{"./api/data":"src/api/data.js","./core/quizzGame":"src/core/quizzGame.js","./styles/style.scss":"src/styles/style.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./containers/QuizzGame":"src/containers/QuizzGame.js","./constants":"src/constants.js","./styles/style.scss":"src/styles/style.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -3676,7 +4567,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54643" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59377" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

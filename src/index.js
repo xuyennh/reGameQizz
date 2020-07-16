@@ -1,7 +1,7 @@
-import data from "./api/data";
-import QuizzGame from "./core/quizzGame";
-import "./styles/style.scss";
+import QuizzGame from './containers/QuizzGame';
+import { ROOT } from './constants';
+import './styles/style.scss';
 
 new QuizzGame({
-  el: document.getElementById("root"),
+	el: ROOT
 });

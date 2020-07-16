@@ -1,8 +1,8 @@
-import styles from "../button/button.scss";
+import styles from "./button.scss";
 
 function ButtonChooseAnswer() {
   return /*html*/ `
-    <button class="${styles.btn}" id="choose-answer">Chọn</button>
+    <button class="${styles.btn} ${styles.btn_dark}" id="choose-answer">Chọn</button>
   `;
 }
 export default ButtonChooseAnswer;
