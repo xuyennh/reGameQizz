@@ -40,7 +40,7 @@ export default class ModerationQuestionsPage {
 			this._handleDeleteQuestion(event);
 		});
 	}
-	_handleEditQuestion() {
+	_handleEditQuestion(event) {
 		const idQuestionDraft = event.target.getAttribute('data-id');
 		const questionDraftState = questionDraft.get();
 		const [ question ] = questionDraftState.data.filter((item) => {
